@@ -42,8 +42,7 @@ The user info returned currently is:
 
 ## Installation & Configuration
 
-If you want to run the application by yourself here are the steps for
-you.
+If you want to run the application by yourself here are the steps for you.
 
 First you need to clone the [repository from GitHub](http://github.com/btcjam/btcjam-client)
 
@@ -58,7 +57,16 @@ And migrate the databse
     rake db:migrate
 
 At this point the application should be ready to run, but it won't
-communicate correctly with the provider. You need to set up environment
+communicate correctly with the provider.
+
+Go to [BTCJam](https://btcjam.com) and register your application using the settings
+tab at the dashboard.
+
+The callback url for this application will look like this
+
+    http://localhost:3000/users/auth/btcjam/callback
+
+You need to set up environment
 variables to indicate the oauth2 provider values. In your environemnt
 file set up these variables
 
