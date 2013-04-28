@@ -7,7 +7,7 @@ strategy is build on top of [abstract OAuth2 strategy for OmniAuth](https://gith
 
 ## About the BTCJam API
 
-For more information about the API check [here](https://btcjam.com/api),
+For more information about the API check [here](https://btcjam.com/faq/api),
 this project is hosted [here](https://github.com/btcjam/btcjam-client).
 
 The user info returned currently is:
