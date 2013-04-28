@@ -1,15 +1,14 @@
 # BTCJam API Client Demo
 
-This app is an example of OAuth2 client. It was built in order to test
-the [BTCJam OAuth2 API](http://btcjam-client.herokuapp.com/).
+This app is an example of a BTCJam API OAuth2 client.
 It uses [rails](http://github.com/rails/rails/), [devise](http://github.com/plataformatec/devise)
 and [omniauth](http://github.com/intridea/omniauth) gems. OAuth2
 strategy is build on top of [abstract OAuth2 strategy for OmniAuth](https://github.com/intridea/omniauth-oauth2)
 
 ## About BTCJam API
 
-For more information [about the API](https://btcjam.com/api),
-check out this project [on GitHub](https://github.com/btcjam/btcjam-client).
+For more information about the API check [here](https://btcjam.com/api),
+this project is hosted [on GitHub](https://github.com/btcjam/btcjam-client).
 
 ## Installation & Configuration
 
