@@ -62,4 +62,4 @@ end
 
 BTCJAM_APP_ID = "b8381379940731f5abc4017f9394634757f4dd9614a73f3bcecb2897b3fdb80c"
 BTCJAM_APP_SECRET = "dec7b368b4ffbbfde7668c4d2b522f4a08cc5e5515356f6e7bc29133640343f2"
-BTCJAM_APP_URL = "http://btcjam-client.herokuapp.com"
+BTCJAM_APP_URL = "https://btcjam.com"
