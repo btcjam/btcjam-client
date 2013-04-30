@@ -5,12 +5,12 @@ It uses [rails](http://github.com/rails/rails/), [devise](http://github.com/plat
 and [omniauth](http://github.com/intridea/omniauth) gems. OAuth2
 strategy is build on top of [abstract OAuth2 strategy for OmniAuth](https://github.com/intridea/omniauth-oauth2)
 
+This app is live [here](http://btcjam-client.herokuapp.com/).
+
 ## About the BTCJam API
 
 For more information about the API check [here](https://btcjam.com/faq/api),
 this project is hosted [here](https://github.com/btcjam/btcjam-client).
-
-This app is live [here](http://btcjam-client.herokuapp.com/).
 
 The user info returned currently is:
 
