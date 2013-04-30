@@ -10,6 +10,8 @@ strategy is build on top of [abstract OAuth2 strategy for OmniAuth](https://gith
 For more information about the API check [here](https://btcjam.com/faq/api),
 this project is hosted [here](https://github.com/btcjam/btcjam-client).
 
+This app is live [here](http://btcjam-client.herokuapp.com/).
+
 The user info returned currently is:
 
     info['alias']
