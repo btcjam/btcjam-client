@@ -60,6 +60,6 @@ BtcjamClient::Application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost' }
 end
 
-BTCJAM_APP_ID = "1ddde7cfab1b1696104f2fde213ada8b504972de7b2d17eaaa3125cb559f65c9"
-BTCJAM_APP_SECRET = "796ce849f90771b5d3f4f2b9f3c2b48b2db3e4052d94d40b5f1d9f86cee63a73"
+BTCJAM_APP_ID = "b8381379940731f5abc4017f9394634757f4dd9614a73f3bcecb2897b3fdb80c"
+BTCJAM_APP_SECRET = "dec7b368b4ffbbfde7668c4d2b522f4a08cc5e5515356f6e7bc29133640343f2"
 BTCJAM_APP_URL = "https://btcjam.com"
