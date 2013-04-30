@@ -19,6 +19,10 @@ db/*.sqlite3
 /log/*.log
 /tmp
 
+tmp/*
+db/development.sqlite
+config/database.yml
+
 .rvmrc
 
 # various artifacts
