@@ -1,0 +1,19 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1366729298.391274:@value{	I"length:EFiI"digest;
+F"%ab2e2dd53d80a603d6680d3fd3938881I"source;
+FI"/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+*/
+
+
+body {
+  padding: 60px;
+}
+
+section > .row {
+  margin-bottom: 10px;
+}
+;
+FI"_version;
+F"%a1ed703448452722f003dc810e80f05c
