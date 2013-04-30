@@ -1,29 +1,49 @@
 %section
   .row
     .span16
+      .well
+        %br/
+        %p
+          For more information please visit #{link_to "our repository", "https://github.com/btcjam/btcjam-client"} and our #{link_to "API FAQ", "https://btcjam.com/faq/api"}.
+  .row
+    .span6
       - unless signed_in?
-        %h3 Sign in first to explore the provider's API
-        %p= link_to "Sign in with OAuth 2 provider", user_omniauth_authorize_path(:btcjam), :class => "btn primary"
+        %h3 Sign in to explore the OAuth2 API
+        .well
+          %p= link_to "Sign in with OAuth 2 provider", user_omniauth_authorize_path(:btcjam), :class => "btn primary"
       - else
-        %h2 BTCJam API demo
+        %h2 BTCJam OAuth2 API
         .well
           -if signed_in?
             %p
-              You are logged in as:
+              You are logged in as: <strong>#{current_user.oauth_info("alias")}</strong>
               %ul
-                %li User ID: <strong>#{current_user.btcjam_uid}</strong>
-                %li Alias: <strong>#{current_user.oauth_info("alias")}</strong>
+                -#%li User ID: <strong>#{current_user.btcjam_uid}</strong>
                 %li BTCJam score: <strong>#{current_user.oauth_info("btcjam_score")}</strong>
-                %li Positive ratings received: <strong>#{current_user.oauth_info("positive_count_reputation")}</strong>
-                %li Identity verified: <strong>#{current_user.oauth_info("identity_verified")}</strong>
-                %li Address verified: <strong>#{current_user.oauth_info("address_verified")}</strong>
+                -#%li Positive ratings received: <strong>#{current_user.oauth_info("positive_count_reputation")}</strong>
+                -#%li Identity verified: <strong>#{current_user.oauth_info("identity_verified")}</strong>
+                -#%li Address verified: <strong>#{current_user.oauth_info("address_verified")}</strong>
           %p
             = link_to "User Information", authenticated_calls_path(:me, :format => :json), :class => "btn", "data-explore" => []
-            = link_to "Query Open Listings", open_calls_path(:listings, :format => :json), :class => "btn", "data-explore" => []
             = link_to "Sign out", destroy_user_session_path, :class => "btn primary"
+    .span10
+      %h2 BTCJam JSON API
+      .well
+        %table.table.table-striped.table-bordered
+          %thead
+            %tr
 
+              %th Request Format
+          %tbody
+            %tr
+
+              %td https://btcjam.com/api/v1/listings?appid=[<strong>APP ID</strong>]&secret=[<strong>APP Secret</strong>]
 
         %p
-          %pre#display-json
-            Select one of the api methods above
+        = link_to "Query All Open Listings", open_calls_path(:listings, :format => :json), :class => "btn", "data-explore" => []
+  .row
+    .span16
+      %p
+        %pre#display-json
+          Select one of the api methods above
 
