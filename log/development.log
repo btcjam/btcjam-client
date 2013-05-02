@@ -9255,3 +9255,715 @@ Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 12:28:38 -0300
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 13:54:16 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 11ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 13:54:16 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 13:54:16 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 13:54:16 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 13:54:16 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 13:55:18 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 13:55:18 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 13:55:18 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 13:55:18 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 13:55:18 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 14:10:36 -0300
+
+
+Started GET "/users/auth/btcjam/callback?code=52f9783b50e2086e9e47c6a30ea68a51eeb6835783161cf78267711034e1d321" for 127.0.0.1 at 2013-05-02 14:10:51 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"52f9783b50e2086e9e47c6a30ea68a51eeb6835783161cf78267711034e1d321"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 4 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":4,"info":{"alias":"caca7","country":"US","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":4,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":false,"facebook_friend_count":null,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":false,"paypal_account_date":null,"repaid_loans_count":0,"repaid_loans_amount":"0.0","late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":"0.0","made_late_payments_count":0,"name":null},"credentials":{"token":"b4c9c9b9ddb6e19795d1d77882fb762f9b9a63b4ba404238919ea6e3649cd420","expires_at":1367521851,"expires":true},"extra":{}}', "btcjam_access_token" = 'b4c9c9b9ddb6e19795d1d77882fb762f9b9a63b4ba404238919ea6e3649cd420', "updated_at" = '2013-05-02 17:10:51.804572' WHERE "users"."id" = 8
+Redirected to http://localhost:3001/
+Completed 302 Found in 50ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 14:10:51 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (16.2ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 14:10:51 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 14:10:52 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 14:10:52 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 14:10:52 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2013-05-02 14:14:24 -0300
+  Processing by Users::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Redirected to http://localhost:3001/
+Completed 302 Found in 14ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 14:14:24 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 14:14:24 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 14:14:24 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 14:14:24 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 14:14:24 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 14:14:25 -0300
+
+
+Started GET "/users/auth/btcjam/callback?code=abbdc9c4d0a22bc0c942ff20cf51cb345e5dac0101ad585b280a6d5bfa90808e" for 127.0.0.1 at 2013-05-02 14:14:32 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"abbdc9c4d0a22bc0c942ff20cf51cb345e5dac0101ad585b280a6d5bfa90808e"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 4 LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  UPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":4,"info":{"alias":"caca7","country":"US","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":4,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":false,"facebook_friend_count":null,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":false,"paypal_account_date":null,"repaid_loans_count":0,"repaid_loans_amount":"0.0","late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":"0.0","made_late_payments_count":0,"name":null},"credentials":{"token":"b4c9c9b9ddb6e19795d1d77882fb762f9b9a63b4ba404238919ea6e3649cd420","expires_at":1367522072,"expires":true},"extra":{}}', "updated_at" = '2013-05-02 17:14:32.941138' WHERE "users"."id" = 8
+Redirected to http://localhost:3001/
+Completed 302 Found in 19ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 14:14:32 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (15.0ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 14:14:33 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 14:14:33 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 14:14:33 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 14:14:33 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam/callback?code=b525d288ab32b4a7e6b0a2fcdc45b10063a34efe0d6ebb6e7cfaaf0ca7c0c4eb" for 127.0.0.1 at 2013-05-02 14:23:53 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"b525d288ab32b4a7e6b0a2fcdc45b10063a34efe0d6ebb6e7cfaaf0ca7c0c4eb"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 4 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":4,"info":{"alias":"caca7","country":"US","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":4,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":false,"facebook_friend_count":null,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":false,"paypal_account_date":null,"repaid_loans_count":0,"repaid_loans_amount":"0.0","late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":"0.0","made_late_payments_count":0,"name":null},"credentials":{"token":"b4c9c9b9ddb6e19795d1d77882fb762f9b9a63b4ba404238919ea6e3649cd420","expires_at":1367522633,"expires":true},"extra":{}}', "updated_at" = '2013-05-02 17:23:53.908992' WHERE "users"."id" = 8[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Redirected to http://localhost:3001/
+Completed 302 Found in 17ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 14:23:53 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (43.7ms)
+Completed 500 Internal Server Error in 47ms
+
+ActionView::Template::Error (No route matches {:controller=>"api", :action=>"authenticated_calls", :format=>:json, :api=>""}):
+    26:                 -#%li Address verified: <strong>#{current_user.oauth_info("address_verified")}</strong>
+    27:           %p
+    28:             = link_to "User Information", authenticated_calls_path(:me, :format => :json), :class => "btn", "data-explore" => []
+    29:             = link_to "User Information", authenticated_calls_path("", :format => :json), :class => "btn", "data-explore" => []
+    30:             = link_to "Sign out", destroy_user_session_path, :class => "btn primary"
+    31:     .span10
+    32:       %h2 BTCJam JSON API
+  app/views/home/index.html.haml:29:in `_app_views_home_index_html_haml___3163395093970079112_70153780757420'
+
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/users/auth/btcjam/callback?code=74b738e1d933eb054e041a6c3e81dec661eb7b6fb33a764e452d745b1ff6956e" for 127.0.0.1 at 2013-05-02 14:24:06 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"74b738e1d933eb054e041a6c3e81dec661eb7b6fb33a764e452d745b1ff6956e"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 4 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":4,"info":{"alias":"caca7","country":"US","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":4,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":false,"facebook_friend_count":null,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":false,"paypal_account_date":null,"repaid_loans_count":0,"repaid_loans_amount":"0.0","late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":"0.0","made_late_payments_count":0,"name":null},"credentials":{"token":"b4c9c9b9ddb6e19795d1d77882fb762f9b9a63b4ba404238919ea6e3649cd420","expires_at":1367522646,"expires":true},"extra":{}}', "updated_at" = '2013-05-02 17:24:06.377128' WHERE "users"."id" = 8[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Redirected to http://localhost:3001/
+Completed 302 Found in 17ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 14:24:06 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (13.3ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (No route matches {:controller=>"api", :action=>"authenticated_calls", :format=>:json, :api=>""}):
+    26:                 -#%li Address verified: <strong>#{current_user.oauth_info("address_verified")}</strong>
+    27:           %p
+    28:             = link_to "User Information", authenticated_calls_path(:me, :format => :json), :class => "btn", "data-explore" => []
+    29:             = link_to "User Information", authenticated_calls_path("", :format => :json), :class => "btn", "data-explore" => []
+    30:             = link_to "Sign out", destroy_user_session_path, :class => "btn primary"
+    31:     .span10
+    32:       %h2 BTCJam JSON API
+  app/views/home/index.html.haml:29:in `_app_views_home_index_html_haml___3163395093970079112_70153780757420'
+
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users/auth/btcjam/callback?code=5640efdddf217fa203ae29f8e6c17e50d0e8154bbfcf18087bd117d12b825e60" for 127.0.0.1 at 2013-05-02 14:24:11 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"5640efdddf217fa203ae29f8e6c17e50d0e8154bbfcf18087bd117d12b825e60"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 4 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":4,"info":{"alias":"caca7","country":"US","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":4,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":false,"facebook_friend_count":null,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":false,"paypal_account_date":null,"repaid_loans_count":0,"repaid_loans_amount":"0.0","late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":"0.0","made_late_payments_count":0,"name":null},"credentials":{"token":"b4c9c9b9ddb6e19795d1d77882fb762f9b9a63b4ba404238919ea6e3649cd420","expires_at":1367522651,"expires":true},"extra":{}}', "updated_at" = '2013-05-02 17:24:12.190935' WHERE "users"."id" = 8[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Redirected to http://localhost:3001/
+Completed 302 Found in 42ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 14:24:12 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (No route matches {:controller=>"api", :action=>"authenticated_calls", :format=>:json, :api=>""}):
+    26:                 -#%li Address verified: <strong>#{current_user.oauth_info("address_verified")}</strong>
+    27:           %p
+    28:             = link_to "User Information", authenticated_calls_path(:me, :format => :json), :class => "btn", "data-explore" => []
+    29:             = link_to "User Information", authenticated_calls_path("", :format => :json), :class => "btn", "data-explore" => []
+    30:             = link_to "Sign out", destroy_user_session_path, :class => "btn primary"
+    31:     .span10
+    32:       %h2 BTCJam JSON API
+  app/views/home/index.html.haml:29:in `_app_views_home_index_html_haml___3163395093970079112_70153780757420'
+
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 14:24:53 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Rendered home/index.html.haml within layouts/application (43.5ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 14:24:53 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 14:24:53 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 14:24:53 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 14:24:53 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 14:26:13 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (19.8ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (No route matches {:controller=>"api", :action=>"authenticated_calls", :format=>:json, :api=>"listings/1/invest"}):
+    26:                 -#%li Address verified: <strong>#{current_user.oauth_info("address_verified")}</strong>
+    27:           %p
+    28:             = link_to "User Information", authenticated_calls_path(:me), :class => "btn", "data-explore" => []
+    29:             = link_to "User Information", authenticated_calls_path("listings/1/invest", :format => :json), :class => "btn", "data-explore" => []
+    30:             = link_to "Sign out", destroy_user_session_path, :class => "btn primary"
+    31:     .span10
+    32:       %h2 BTCJam JSON API
+  app/views/home/index.html.haml:29:in `_app_views_home_index_html_haml___3163395093970079112_70153780519080'
+
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 14:26:43 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Rendered home/index.html.haml within layouts/application (19.6ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 14:26:43 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 14:26:44 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 14:26:44 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 14:26:44 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/authenticated_calls/me" for 127.0.0.1 at 2013-05-02 14:26:49 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"me"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Completed 200 OK in 195ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 14:29:09 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Rendered home/index.html.haml within layouts/application (19.1ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 14:29:09 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 14:29:09 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 14:29:09 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 14:29:09 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 14:29:47 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (49.5ms)
+Completed 200 OK in 56ms (Views: 55.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 14:29:47 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 14:29:47 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 14:29:47 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 14:29:47 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 14:30:01 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Rendered home/index.html.haml within layouts/application (52.2ms)
+Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 14:30:01 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 14:30:01 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 14:30:01 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 14:30:01 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 14:30:30 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (No route matches {:controller=>"api", :action=>"authenticated_calls", :id=>1, :amount=>0.1, :api=>"listings/1/invest"}):
+    26:                 -#%li Address verified: <strong>#{current_user.oauth_info("address_verified")}</strong>
+    27:           %p
+    28:             = link_to "User Information", authenticated_calls_path(:me), :class => "btn", "data-explore" => []
+    29:             = link_to "User Information", authenticated_calls_path("listings/1/invest", {:id => 1, :amount => 0.1}), :class => "btn", "data-explore" => []
+    30:             = link_to "Sign out", destroy_user_session_path, :class => "btn primary"
+    31:     .span10
+    32:       %h2 BTCJam JSON API
+  app/views/home/index.html.haml:29:in `_app_views_home_index_html_haml___3163395093970079112_70153779256380'
+
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 14:31:49 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Rendered home/index.html.haml within layouts/application (48.3ms)
+Completed 500 Internal Server Error in 53ms
+
+ActionView::Template::Error (No route matches {:controller=>"api", :action=>"authenticated_calls", :id=>1, :amount=>0.1, :api=>"listings/1/invest"}):
+    26:                 -#%li Address verified: <strong>#{current_user.oauth_info("address_verified")}</strong>
+    27:           %p
+    28:             = link_to "User Information", authenticated_calls_path(:me), :class => "btn", "data-explore" => []
+    29:             = link_to "User Information", authenticated_calls_path("listings\/1\/invest", {:id => 1, :amount => 0.1}), :class => "btn", "data-explore" => []
+    30:             = link_to "Sign out", destroy_user_session_path, :class => "btn primary"
+    31:     .span10
+    32:       %h2 BTCJam JSON API
+  app/views/home/index.html.haml:29:in `_app_views_home_index_html_haml___3163395093970079112_70153781282060'
+
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 14:31:50 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (13.1ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (No route matches {:controller=>"api", :action=>"authenticated_calls", :id=>1, :amount=>0.1, :api=>"listings/1/invest"}):
+    26:                 -#%li Address verified: <strong>#{current_user.oauth_info("address_verified")}</strong>
+    27:           %p
+    28:             = link_to "User Information", authenticated_calls_path(:me), :class => "btn", "data-explore" => []
+    29:             = link_to "User Information", authenticated_calls_path("listings\/1\/invest", {:id => 1, :amount => 0.1}), :class => "btn", "data-explore" => []
+    30:             = link_to "Sign out", destroy_user_session_path, :class => "btn primary"
+    31:     .span10
+    32:       %h2 BTCJam JSON API
+  app/views/home/index.html.haml:29:in `_app_views_home_index_html_haml___3163395093970079112_70153781282060'
+
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 14:31:51 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Rendered home/index.html.haml within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (No route matches {:controller=>"api", :action=>"authenticated_calls", :id=>1, :amount=>0.1, :api=>"listings/1/invest"}):
+    26:                 -#%li Address verified: <strong>#{current_user.oauth_info("address_verified")}</strong>
+    27:           %p
+    28:             = link_to "User Information", authenticated_calls_path(:me), :class => "btn", "data-explore" => []
+    29:             = link_to "User Information", authenticated_calls_path("listings\/1\/invest", {:id => 1, :amount => 0.1}), :class => "btn", "data-explore" => []
+    30:             = link_to "Sign out", destroy_user_session_path, :class => "btn primary"
+    31:     .span10
+    32:       %h2 BTCJam JSON API
+  app/views/home/index.html.haml:29:in `_app_views_home_index_html_haml___3163395093970079112_70153781282060'
+
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 14:32:03 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (47.3ms)
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 14:32:03 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 14:32:04 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 14:32:04 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 14:32:04 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 14:46:19 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Rendered home/index.html.haml within layouts/application (45.5ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 14:46:19 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 14:46:20 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 14:46:20 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 14:46:20 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/invest_call/investments?amount=0.1&listing_id=1" for 127.0.0.1 at 2013-05-02 14:46:30 -0300
+  Processing by ApiController#invest_call as HTML
+  Parameters: {"amount"=>"0.1", "listing_id"=>"1", "api"=>"investments"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Completed 500 Internal Server Error in 1230ms
+
+OAuth2::Error (OAuth2::Error):
+  app/controllers/api_controller.rb:13:in `invest_call'
+
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started GET "/invest_call/investments?amount=0.1&listing_id=1" for 127.0.0.1 at 2013-05-02 14:47:42 -0300
+  Processing by ApiController#invest_call as HTML
+  Parameters: {"amount"=>"0.1", "listing_id"=>"1", "api"=>"investments"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Completed 500 Internal Server Error in 126ms
+
+OAuth2::Error (OAuth2::Error):
+  app/controllers/api_controller.rb:13:in `invest_call'
+
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.5ms)
+
+
+Started GET "/invest_call/investments?amount=0.1&listing_id=1" for 127.0.0.1 at 2013-05-02 14:48:23 -0300
+  Processing by ApiController#invest_call as HTML
+  Parameters: {"amount"=>"0.1", "listing_id"=>"1", "api"=>"investments"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Completed 200 OK in 50ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2013-05-02 14:48:34 -0300
+  Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 200 OK in 1144ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/invest_call/investments?amount=0.1&listing_id=1" for 127.0.0.1 at 2013-05-02 14:52:11 -0300
+  Processing by ApiController#invest_call as HTML
+  Parameters: {"amount"=>"0.1", "listing_id"=>"1", "api"=>"investments"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Completed 200 OK in 135ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 15:01:22 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (49.8ms)
+Completed 200 OK in 57ms (Views: 55.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 15:01:22 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 15:01:23 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 15:01:23 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 15:01:23 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/authenticated_calls/my_open_listings" for 127.0.0.1 at 2013-05-02 15:01:27 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_open_listings"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Completed 200 OK in 1163ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2013-05-02 15:05:27 -0300
+  Processing by Users::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 18ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 15:05:27 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 15:05:27 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 15:05:27 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 15:05:28 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 15:05:28 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 15:05:29 -0300
+
+
+Started GET "/users/auth/btcjam/callback?code=34b12c62ceb7df9c18490006147fd93ff1fce7983df4713da90385d58ab7b2cf" for 127.0.0.1 at 2013-05-02 15:05:29 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"34b12c62ceb7df9c18490006147fd93ff1fce7983df4713da90385d58ab7b2cf"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 4 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":4,"info":{"alias":"caca7","country":"US","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":4,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":false,"facebook_friend_count":null,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":false,"paypal_account_date":null,"repaid_loans_count":0,"repaid_loans_amount":"0.0","late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":"0.0","made_late_payments_count":0,"name":null},"credentials":{"token":"b4c9c9b9ddb6e19795d1d77882fb762f9b9a63b4ba404238919ea6e3649cd420","expires_at":1367525129,"expires":true},"extra":{}}', "updated_at" = '2013-05-02 18:05:30.648759' WHERE "users"."id" = 8[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 17ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 15:05:30 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Rendered home/index.html.haml within layouts/application (13.4ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 15:05:30 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 15:05:30 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 15:05:30 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 15:05:30 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2013-05-02 15:05:32 -0300
+  Processing by Users::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 14ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 15:05:32 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 15:05:32 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 15:05:32 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 15:05:32 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 15:05:32 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 15:05:39 -0300
+
+
+Started GET "/users/auth/btcjam/callback?code=962c5188c48d92af7f2024ae751e35bc6a0cd871e9615d12661d9e6cc5d4c048" for 127.0.0.1 at 2013-05-02 15:05:53 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"962c5188c48d92af7f2024ae751e35bc6a0cd871e9615d12661d9e6cc5d4c048"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 2 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":2,"info":{"alias":"(User #1211)1","country":"TW","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":11,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":true,"facebook_friend_count":226,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":true,"paypal_account_date":"2007-04-07","repaid_loans_count":0,"repaid_loans_amount":"0.0","late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":"0.0","made_late_payments_count":0,"name":null},"credentials":{"token":"2f387b084b847b3cf00b81da108fc795f930f8cca3131d32f90363263dac2596","expires_at":1367525153,"expires":true},"extra":{}}', "btcjam_access_token" = '2f387b084b847b3cf00b81da108fc795f930f8cca3131d32f90363263dac2596', "updated_at" = '2013-05-02 18:05:53.818038' WHERE "users"."id" = 7[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 17ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 15:05:53 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Rendered home/index.html.haml within layouts/application (44.6ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 15:05:53 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 15:05:53 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 15:05:53 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 15:05:53 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/authenticated_calls/my_open_listings" for 127.0.0.1 at 2013-05-02 15:05:57 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_open_listings"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 500ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2013-05-02 15:06:02 -0300
+  Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 200 OK in 304ms (Views: 1.2ms | ActiveRecord: 0.0ms)

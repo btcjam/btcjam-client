@@ -8,6 +8,12 @@ class ApiController < ApplicationController
     respond_with @json
   end
 
+  def invest_call
+
+    @json = btcjam_access_token.post("api/v1/#{params[:api]}").parsed
+    respond_with @json
+  end
+
   def open_calls
 
     @listings = SSLAccess::ssl_get("#{BTCJAM_APP_URL}/api/v1/#{params[:api]}", {:appid => BTCJAM_APP_ID, :secret => BTCJAM_APP_SECRET} )

@@ -50,6 +50,7 @@ BtcjamClient::Application.routes.draw do
   # just remember to delete public/index.html.
   #
   match 'authenticated_calls/:api' => 'api#authenticated_calls', :as => :authenticated_calls
+  match 'invest_call/:api' => 'api#invest_call', :as => :invest_call
   match 'open_calls/:api' => 'api#open_calls', :as => :open_calls
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" } do

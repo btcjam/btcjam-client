@@ -25,7 +25,9 @@
                 -#%li Identity verified: <strong>#{current_user.oauth_info("identity_verified")}</strong>
                 -#%li Address verified: <strong>#{current_user.oauth_info("address_verified")}</strong>
           %p
-            = link_to "User Information", authenticated_calls_path(:me, :format => :json), :class => "btn", "data-explore" => []
+            = link_to "User Information", authenticated_calls_path(:me), :class => "btn", "data-explore" => []
+            = link_to "My Open Listings", authenticated_calls_path(:my_open_listings), :class => "btn", "data-explore" => []
+            = link_to "Invest", invest_call_path(:investments, {:listing_id => 1, :amount => 0.1}), :class => "btn", "data-explore" => []
             = link_to "Sign out", destroy_user_session_path, :class => "btn primary"
     .span10
       %h2 BTCJam JSON API
@@ -41,7 +43,7 @@
               %td https://btcjam.com/api/v1/listings?appid=[<strong>APP ID</strong>]&secret=[<strong>APP Secret</strong>]
 
         %p
-        = link_to "Query All Open Listings", open_calls_path(:listings, :format => :json), :class => "btn", "data-explore" => []
+        = link_to "Query All Open Listings", open_calls_path(:listings), :class => "btn", "data-explore" => []
   .row
     .span16
       %p
