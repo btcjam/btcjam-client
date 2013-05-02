@@ -1,4 +1,5 @@
 class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
+
   def btcjam
     oauth_data = request.env["omniauth.auth"]
 
@@ -8,4 +9,10 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
     sign_in_and_redirect @user
   end
+
+  def failure
+    redirect_to root_path
+
+  end
+
 end
