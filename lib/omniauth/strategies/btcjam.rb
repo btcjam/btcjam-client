@@ -4,7 +4,7 @@ module OmniAuth
       option :name, :btcjam
 
       option :client_options, {
-        :site => "http://localhost:3000",
+        :site => "https://btcjam.com",
         :authorize_path => "/oauth/authorize"
       }
 

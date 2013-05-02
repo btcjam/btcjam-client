@@ -7425,3 +7425,1698 @@ Served asset /jquery.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-30 15:51:48 -0300
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 08:36:38 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 64ms (Views: 63.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 08:36:38 -0300
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 08:36:38 -0300
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 08:36:38 -0300
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 08:36:38 -0300
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 08:36:41 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 08:40:59 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 08:41:01 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 08:47:21 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 08:47:26 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 08:50:26 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 08:50:27 -0300
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 08:50:27 -0300
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 08:50:27 -0300
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 08:50:27 -0300
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 08:50:29 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 09:03:09 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 09:03:09 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 09:03:09 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 09:03:09 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 09:03:09 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 09:03:21 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 09:20:17 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 09:20:17 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 09:20:17 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 09:20:17 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 09:20:17 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 09:20:26 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 09:21:38 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 09:21:38 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 09:21:38 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 09:21:38 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 09:21:38 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 09:21:44 -0300
+
+
+Started GET "/users/auth/btcjam/callback?code=261fbbba0de6a2ef513b547877767b4de6c42fa3471187024f61e23916793194" for 127.0.0.1 at 2013-05-02 09:21:55 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"261fbbba0de6a2ef513b547877767b4de6c42fa3471187024f61e23916793194"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 4 LIMIT 1[0m
+  [1m[35m (1.7ms)[0m  UPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":4,"info":{"alias":"caca7","country":"US","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":4,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":false,"facebook_friend_count":null,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":false,"paypal_account_date":null,"repaid_loans_count":0,"repaid_loans_amount":"0.0","late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":"0.0","made_late_payments_count":0,"name":null},"credentials":{"token":"9188472a1875f10618ccba7543988783247514691b7f7049185ea67f0028c2b9","expires_at":1367504515,"expires":true},"extra":{}}', "btcjam_access_token" = '9188472a1875f10618ccba7543988783247514691b7f7049185ea67f0028c2b9', "updated_at" = '2013-05-02 12:21:56.371296' WHERE "users"."id" = 8
+Redirected to http://localhost:3001/
+Completed 302 Found in 79ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 09:21:56 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (34.3ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 09:21:56 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 09:21:56 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 09:21:56 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 09:21:56 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 09:22:10 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Rendered home/index.html.haml within layouts/application (13.5ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 09:22:10 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 09:22:10 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 09:22:10 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 09:22:10 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2013-05-02 09:22:12 -0300
+  Processing by Users::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 13ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 09:22:12 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 09:22:12 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 09:22:12 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 09:22:12 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 09:22:12 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 09:22:14 -0300
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 09:23:43 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 09:25:44 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 09:25:44 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 09:25:44 -0300
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 09:25:44 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 09:25:44 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 09:25:46 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 09:30:48 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 09:30:48 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 09:30:48 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 09:30:48 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 09:30:48 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 09:30:50 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 09:31:53 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 09:31:53 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 09:31:53 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 09:31:53 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 09:31:53 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 09:31:54 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 09:31:54 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 09:31:55 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 09:31:55 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 09:31:55 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 09:31:57 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 09:48:37 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 09:48:37 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 09:48:37 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 09:48:37 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 09:48:37 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 09:51:34 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 09:53:53 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 09:53:53 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 09:53:53 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 09:53:53 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 09:53:53 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 09:53:55 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 10:00:23 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 10:00:23 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 10:00:23 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 10:00:23 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 10:00:23 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 10:00:25 -0300
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 10:01:05 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 10:03:03 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 10:03:03 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 10:03:03 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 10:03:03 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 10:03:03 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 10:03:04 -0300
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 10:03:28 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 10:06:39 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 10:06:39 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 10:06:39 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 10:06:39 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 10:06:39 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 10:09:48 -0300
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 10:10:48 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 10:12:42 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 10:12:42 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 10:12:42 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 10:12:42 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 10:12:42 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 10:12:45 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 10:13:53 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 10:13:53 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 10:13:53 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 10:13:53 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 10:13:53 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 10:13:56 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 10:17:31 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 10:17:31 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 10:17:31 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 10:17:31 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 10:17:31 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 10:17:33 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 10:18:49 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 10:18:49 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 10:18:49 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 10:18:49 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 10:18:49 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 10:18:57 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 10:20:33 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 10:20:33 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 10:20:33 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 10:20:33 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 10:20:33 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 10:20:35 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 10:26:34 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 10:26:34 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 10:26:35 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 10:26:35 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 10:26:35 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 10:26:36 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 10:32:09 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 10:32:09 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 10:32:09 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 10:32:09 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 10:32:09 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 10:32:11 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 10:35:19 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 10:35:19 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 10:35:19 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 10:35:19 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 10:35:19 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 10:35:20 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 10:36:21 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 10:36:21 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 10:36:21 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 10:36:21 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 10:36:21 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 10:36:25 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 10:41:13 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 10:41:13 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 10:41:13 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 10:41:13 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 10:41:13 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 10:41:15 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 10:56:57 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 10:56:57 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 10:56:58 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 10:56:58 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 10:56:58 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 10:57:01 -0300
+
+
+Started GET "/users/auth/btcjam/callback" for 127.0.0.1 at 2013-05-02 10:57:06 -0300
+  Processing by Users::OmniauthCallbacksController#failure as HTML
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `new_session_path' for #<Users::OmniauthCallbacksController:0x007f9be61ceec0>):
+  
+
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (23.8ms)
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (35.3ms)
+
+
+Started GET "/users/auth/btcjam/callback" for 127.0.0.1 at 2013-05-02 11:00:37 -0300
+  Processing by Users::OmniauthCallbacksController#failure as HTML
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `new_session_path' for #<Users::OmniauthCallbacksController:0x007f9be63317e0>):
+  
+
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:00:42 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:00:42 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:00:43 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:00:43 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:00:43 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 11:00:44 -0300
+
+
+Started GET "/users/auth/btcjam/callback?code=02488fa384913a7dcb21c2107877421cfa797c0e9e387875ffc05424a85720c6" for 127.0.0.1 at 2013-05-02 11:00:45 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"02488fa384913a7dcb21c2107877421cfa797c0e9e387875ffc05424a85720c6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 4 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":4,"info":{"alias":"caca7","country":"US","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":4,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":false,"facebook_friend_count":null,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":false,"paypal_account_date":null,"repaid_loans_count":0,"repaid_loans_amount":"0.0","late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":"0.0","made_late_payments_count":0,"name":null},"credentials":{"token":"9188472a1875f10618ccba7543988783247514691b7f7049185ea67f0028c2b9","expires_at":1367510445,"expires":true},"extra":{}}', "updated_at" = '2013-05-02 14:00:45.615957' WHERE "users"."id" = 8[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 17ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:00:45 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Rendered home/index.html.haml within layouts/application (14.1ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:00:45 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:00:45 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:00:45 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:00:45 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2013-05-02 11:00:47 -0300
+  Processing by Users::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 39ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:00:47 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:00:47 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:00:48 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:00:48 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:00:48 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:01:08 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:01:08 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:01:08 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:01:08 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:01:08 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 11:01:10 -0300
+
+
+Started GET "/users/auth/btcjam/callback" for 127.0.0.1 at 2013-05-02 11:01:14 -0300
+  Processing by Users::OmniauthCallbacksController#failure as HTML
+Completed 500 Internal Server Error in 32ms
+
+NoMethodError (undefined method `new_session_path' for #<Users::OmniauthCallbacksController:0x007f9be66e96a8>):
+  
+
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:03:44 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:03:44 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:03:45 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:03:45 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:03:45 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 11:03:49 -0300
+
+
+Started GET "/users/auth/btcjam/callback?code=9c27224b55ae3296bc7a754207de37f1cbfb9c7057adcd02ffcc648f8e521d90" for 127.0.0.1 at 2013-05-02 11:03:49 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"9c27224b55ae3296bc7a754207de37f1cbfb9c7057adcd02ffcc648f8e521d90"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 4 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":4,"info":{"alias":"caca7","country":"US","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":4,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":false,"facebook_friend_count":null,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":false,"paypal_account_date":null,"repaid_loans_count":0,"repaid_loans_amount":"0.0","late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":"0.0","made_late_payments_count":0,"name":null},"credentials":{"token":"9188472a1875f10618ccba7543988783247514691b7f7049185ea67f0028c2b9","expires_at":1367510629,"expires":true},"extra":{}}', "updated_at" = '2013-05-02 14:03:49.299833' WHERE "users"."id" = 8[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 17ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:03:49 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Rendered home/index.html.haml within layouts/application (37.5ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:03:49 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:03:49 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:03:49 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:03:49 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2013-05-02 11:06:47 -0300
+  Processing by Users::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 13ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:06:47 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:06:47 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:06:47 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:06:47 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:06:47 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:07:02 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:07:02 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:07:02 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:07:02 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:07:02 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 11:07:04 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:10:56 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:10:56 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:10:57 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:10:57 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:10:57 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 11:11:00 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:20:39 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:20:39 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:20:39 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:20:39 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:20:39 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 11:20:41 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:21:26 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:21:26 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:26 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:26 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:26 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 11:21:27 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:21:37 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:21:37 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:37 -0300
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:37 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:37 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 11:21:39 -0300
+
+
+Started GET "/users/auth/btcjam/callback?code=3ab7fe551eb8850cc1ec088365826b1b1c3a53e07befdba223c6151dbc450088" for 127.0.0.1 at 2013-05-02 11:21:40 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"3ab7fe551eb8850cc1ec088365826b1b1c3a53e07befdba223c6151dbc450088"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 4 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":4,"info":{"alias":"caca7","country":"US","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":4,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":false,"facebook_friend_count":null,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":false,"paypal_account_date":null,"repaid_loans_count":0,"repaid_loans_amount":"0.0","late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":"0.0","made_late_payments_count":0,"name":null},"credentials":{"token":"9188472a1875f10618ccba7543988783247514691b7f7049185ea67f0028c2b9","expires_at":1367511700,"expires":true},"extra":{}}', "updated_at" = '2013-05-02 14:21:40.962276' WHERE "users"."id" = 8[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 41ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:21:40 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Rendered home/index.html.haml within layouts/application (13.5ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:21:41 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:41 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:41 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:41 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2013-05-02 11:21:42 -0300
+  Processing by Users::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 13ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:21:42 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:21:42 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:42 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:42 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:42 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:21:46 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:21:46 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:46 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:46 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:46 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 11:21:48 -0300
+
+
+Started GET "/users/auth/btcjam/callback?code=1f2277d3025558c68f0a72299086f5900334e084b84b72f984ade7b40fbb604d" for 127.0.0.1 at 2013-05-02 11:21:48 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"1f2277d3025558c68f0a72299086f5900334e084b84b72f984ade7b40fbb604d"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 4 LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mUPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":4,"info":{"alias":"caca7","country":"US","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":4,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":false,"facebook_friend_count":null,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":false,"paypal_account_date":null,"repaid_loans_count":0,"repaid_loans_amount":"0.0","late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":"0.0","made_late_payments_count":0,"name":null},"credentials":{"token":"9188472a1875f10618ccba7543988783247514691b7f7049185ea67f0028c2b9","expires_at":1367511708,"expires":true},"extra":{}}', "updated_at" = '2013-05-02 14:21:48.763843' WHERE "users"."id" = 8[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 17ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:21:48 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Rendered home/index.html.haml within layouts/application (37.1ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:21:48 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:48 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:48 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:48 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2013-05-02 11:21:50 -0300
+  Processing by Users::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 12ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:21:50 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:21:50 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:50 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:50 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:21:50 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:22:02 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:22:02 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:22:02 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:22:02 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:22:02 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 11:22:03 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:22:08 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:22:08 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:22:08 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:22:08 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:22:08 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:24:28 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:24:28 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:24:28 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:24:28 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:24:28 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 11:24:29 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:25:36 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:25:36 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:25:36 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:25:36 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:25:36 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 11:25:37 -0300
+
+
+Started GET "/users/auth/btcjam/callback?code=e0e7a2592217d885873fa2efde7efcf91d73d07c5874fd1808db3593391412bc" for 127.0.0.1 at 2013-05-02 11:25:42 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"e0e7a2592217d885873fa2efde7efcf91d73d07c5874fd1808db3593391412bc"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 4 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":4,"info":{"alias":"caca7","country":"US","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":4,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":false,"facebook_friend_count":null,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":false,"paypal_account_date":null,"repaid_loans_count":0,"repaid_loans_amount":"0.0","late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":"0.0","made_late_payments_count":0,"name":null},"credentials":{"token":"ed5f49bc1f1f2fca02c122f50938577113aa3c6de54329b1919f5d9183f03ac9","expires_at":1367511942,"expires":true},"extra":{}}', "btcjam_access_token" = 'ed5f49bc1f1f2fca02c122f50938577113aa3c6de54329b1919f5d9183f03ac9', "updated_at" = '2013-05-02 14:25:43.095203' WHERE "users"."id" = 8[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 16ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:25:43 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Rendered home/index.html.haml within layouts/application (36.6ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:25:43 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:25:43 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:25:43 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:25:43 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2013-05-02 11:25:50 -0300
+  Processing by Users::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 13ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:25:50 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:25:50 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:25:50 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:25:50 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:25:50 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:26:06 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:26:06 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:26:06 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:26:06 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:26:06 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 11:26:07 -0300
+
+
+Started GET "/users/auth/btcjam/callback?code=5aecd72894e6ad95f507c0720eafb3decd88867b155657c7356d94c8e742ed83" for 127.0.0.1 at 2013-05-02 11:26:27 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"5aecd72894e6ad95f507c0720eafb3decd88867b155657c7356d94c8e742ed83"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 2 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":2,"info":{"alias":"(User #1211)1","country":"TW","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":11,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":true,"facebook_friend_count":219,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":true,"paypal_account_date":"2007-04-07","repaid_loans_count":0,"repaid_loans_amount":"0.0","late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":"0.0","made_late_payments_count":0,"name":null},"credentials":{"token":"e38a384ac9e6a3afa56f5270729d4e39a832180a876493014c4aa221f94debaf","expires_at":1367511987,"expires":true},"extra":{}}', "btcjam_access_token" = 'e38a384ac9e6a3afa56f5270729d4e39a832180a876493014c4aa221f94debaf', "updated_at" = '2013-05-02 14:26:28.091610' WHERE "users"."id" = 7[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 42ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:26:28 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Rendered home/index.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:26:28 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:26:28 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:26:28 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:26:28 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2013-05-02 11:26:36 -0300
+  Processing by Users::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 12ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:26:36 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:26:36 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:26:36 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:26:36 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:26:36 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:26:55 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:26:55 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:26:55 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:26:55 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:26:55 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 11:27:38 -0300
+
+
+Started GET "/users/auth/btcjam/callback?code=dd6237326ebcdd988fd4b58f3e53742df19c725dae2d3b14dec7809383ae8164" for 127.0.0.1 at 2013-05-02 11:27:56 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"dd6237326ebcdd988fd4b58f3e53742df19c725dae2d3b14dec7809383ae8164"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 4 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":4,"info":{"alias":"caca7","country":"US","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":4,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":false,"facebook_friend_count":null,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":false,"paypal_account_date":null,"repaid_loans_count":0,"repaid_loans_amount":"0.0","late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":"0.0","made_late_payments_count":0,"name":null},"credentials":{"token":"905b60ac66a592c5b5b7116bc538577cc5247500848e8af8f89d986d71a62c90","expires_at":1367512076,"expires":true},"extra":{}}', "btcjam_access_token" = '905b60ac66a592c5b5b7116bc538577cc5247500848e8af8f89d986d71a62c90', "updated_at" = '2013-05-02 14:27:56.398431' WHERE "users"."id" = 8[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 16ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:27:56 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Rendered home/index.html.haml within layouts/application (36.6ms)
+Completed 200 OK in 42ms (Views: 41.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:27:56 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:27:56 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:27:56 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:27:56 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2013-05-02 11:27:58 -0300
+  Processing by Users::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 13ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:27:58 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:27:58 -0300
+Served asset /application.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:27:58 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:27:58 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:27:58 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 11:28:00 -0300
+
+
+Started GET "/users/auth/btcjam/callback?code=5ab81902baa3c3c79748a1ecb06e37f7d725874574ee19f8834930bc089bd1aa" for 127.0.0.1 at 2013-05-02 11:28:00 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"5ab81902baa3c3c79748a1ecb06e37f7d725874574ee19f8834930bc089bd1aa"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 4 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mUPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":4,"info":{"alias":"caca7","country":"US","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":4,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":false,"facebook_friend_count":null,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":false,"paypal_account_date":null,"repaid_loans_count":0,"repaid_loans_amount":"0.0","late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":"0.0","made_late_payments_count":0,"name":null},"credentials":{"token":"905b60ac66a592c5b5b7116bc538577cc5247500848e8af8f89d986d71a62c90","expires_at":1367512080,"expires":true},"extra":{}}', "updated_at" = '2013-05-02 14:28:00.715367' WHERE "users"."id" = 8[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 16ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:28:00 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Rendered home/index.html.haml within layouts/application (36.6ms)
+Completed 200 OK in 42ms (Views: 41.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:28:00 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:28:00 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:28:00 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:28:00 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2013-05-02 11:28:02 -0300
+  Processing by Users::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 13ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:28:02 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:28:02 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:28:02 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:28:02 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:28:02 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 11:30:24 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 11:30:24 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 11:30:24 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 11:30:24 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 11:30:24 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 11:30:25 -0300
+
+
+Started GET "/users/auth/btcjam/callback?code=e91b0ce1343e0f9e885f42e94928017e5b1b001937847dc5ece70cc6d9a623b2" for 127.0.0.1 at 2013-05-02 12:05:05 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"e91b0ce1343e0f9e885f42e94928017e5b1b001937847dc5ece70cc6d9a623b2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 4 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mUPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":4,"info":{"alias":"caca7","country":"US","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":4,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":false,"facebook_friend_count":null,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":false,"paypal_account_date":null,"repaid_loans_count":0,"repaid_loans_amount":"0.0","late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":"0.0","made_late_payments_count":0,"name":null},"credentials":{"token":"5bb3f9f32562d107a84f3bc8f66be3b6ec4d0e4d118eeb2649057c4b98853b16","expires_at":1367514305,"expires":true},"extra":{}}', "btcjam_access_token" = '5bb3f9f32562d107a84f3bc8f66be3b6ec4d0e4d118eeb2649057c4b98853b16', "updated_at" = '2013-05-02 15:05:05.447729' WHERE "users"."id" = 8[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 47ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 12:05:05 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 8 LIMIT 1
+Rendered home/index.html.haml within layouts/application (14.1ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 12:05:05 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 12:05:05 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 12:05:05 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 12:05:05 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
