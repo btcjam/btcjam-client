@@ -10342,3 +10342,61 @@ Started GET "/open_calls/listings" for 127.0.0.1 at 2013-05-02 22:05:45 -0300
   Processing by ApiController#open_calls as HTML
   Parameters: {"api"=>"listings"}
 Completed 200 OK in 195ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 22:25:21 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (60.9ms)
+Completed 200 OK in 102ms (Views: 100.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 22:25:21 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 22:25:21 -0300
+Served asset /jquery.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 22:25:21 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 22:25:21 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/authenticated_calls/my_payables" for 127.0.0.1 at 2013-05-02 22:25:23 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_payables"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 92ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/my_receivables" for 127.0.0.1 at 2013-05-02 22:25:25 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_receivables"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 55ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/invest_call/investments?amount=0.1&listing_id=1" for 127.0.0.1 at 2013-05-02 22:25:26 -0300
+  Processing by ApiController#invest_call as HTML
+  Parameters: {"amount"=>"0.1", "listing_id"=>"1", "api"=>"investments"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 149ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/my_open_listings" for 127.0.0.1 at 2013-05-02 22:25:27 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_open_listings"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 119ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/me" for 127.0.0.1 at 2013-05-02 22:25:30 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"me"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 187ms (Views: 1.5ms | ActiveRecord: 0.0ms)
