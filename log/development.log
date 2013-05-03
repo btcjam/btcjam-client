@@ -9967,3 +9967,378 @@ Started GET "/open_calls/listings" for 127.0.0.1 at 2013-05-02 15:06:02 -0300
   Processing by ApiController#open_calls as HTML
   Parameters: {"api"=>"listings"}
 Completed 200 OK in 304ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 18:34:39 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 18:34:39 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 18:34:39 -0300
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 18:34:39 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 18:34:39 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-02 18:34:43 -0300
+
+
+Started GET "/users/auth/btcjam/callback?code=e33466566857e69bbe41d07d89c12edd1417d691bf770f9c4999d3335f296982" for 127.0.0.1 at 2013-05-02 18:35:44 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"e33466566857e69bbe41d07d89c12edd1417d691bf770f9c4999d3335f296982"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 2 LIMIT 1[0m
+  [1m[35m (1.5ms)[0m  UPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":2,"info":{"alias":"(User #1211)1","country":"TW","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":11,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":true,"facebook_friend_count":226,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":true,"paypal_account_date":"2007-04-07","repaid_loans_count":0,"repaid_loans_amount":"0.0","late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":"0.0","made_late_payments_count":0,"name":null},"credentials":{"token":"f2213ba1db3891cd9ee5538f4248300d18f0b1296829dabc37513a8e152990aa","expires_at":1367537744,"expires":true},"extra":{}}', "btcjam_access_token" = 'f2213ba1db3891cd9ee5538f4248300d18f0b1296829dabc37513a8e152990aa', "updated_at" = '2013-05-02 21:35:44.721364' WHERE "users"."id" = 7
+Redirected to http://localhost:3001/
+Completed 302 Found in 95ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 18:35:44 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (13.5ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 18:35:44 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 18:35:44 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 18:35:44 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 18:35:44 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/authenticated_calls/me" for 127.0.0.1 at 2013-05-02 18:36:03 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"me"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 100ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 18:38:24 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (20.1ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 18:38:25 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 18:38:25 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 18:38:25 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 18:38:25 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/authenticated_calls/my_receivables" for 127.0.0.1 at 2013-05-02 18:38:34 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_receivables"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Completed 500 Internal Server Error in 37ms
+
+OAuth2::Error (OAuth2::Error):
+  app/controllers/api_controller.rb:7:in `authenticated_calls'
+
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p374@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 18:44:32 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (43.0ms)
+Completed 200 OK in 50ms (Views: 48.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 18:44:32 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 18:44:32 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 18:44:32 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 18:44:32 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/authenticated_calls/my_receivables" for 127.0.0.1 at 2013-05-02 18:44:36 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_receivables"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 659ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 21:01:18 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (37.2ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 21:01:18 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 21:01:18 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 21:01:18 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 21:01:18 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/authenticated_calls/my_receivables" for 127.0.0.1 at 2013-05-02 21:01:22 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_receivables"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 598ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2013-05-02 21:02:08 -0300
+  Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 200 OK in 743ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/my_receivables" for 127.0.0.1 at 2013-05-02 21:03:50 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_receivables"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 57ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/my_receivables" for 127.0.0.1 at 2013-05-02 21:05:57 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_receivables"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 53ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/my_open_listings" for 127.0.0.1 at 2013-05-02 21:05:59 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_open_listings"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 174ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/my_receivables" for 127.0.0.1 at 2013-05-02 21:06:07 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_receivables"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 56ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/my_receivables" for 127.0.0.1 at 2013-05-02 21:08:40 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_receivables"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 52ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 21:15:24 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Rendered home/index.html.haml within layouts/application (36.8ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 21:15:24 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 21:15:25 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 21:15:25 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 21:15:25 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/authenticated_calls/my_receivables" for 127.0.0.1 at 2013-05-02 21:15:39 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_receivables"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 54ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/my_receivables" for 127.0.0.1 at 2013-05-02 21:15:40 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_receivables"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 138ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/me" for 127.0.0.1 at 2013-05-02 21:16:47 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"me"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 101ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/my_open_listings" for 127.0.0.1 at 2013-05-02 21:16:52 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_open_listings"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 195ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/my_receivables" for 127.0.0.1 at 2013-05-02 21:17:09 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_receivables"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 54ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 21:57:57 -0300
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Rendered home/index.html.haml within layouts/application (14.0ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 21:57:57 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 21:57:58 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 21:57:58 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 21:57:58 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/authenticated_calls/my_receivables" for 127.0.0.1 at 2013-05-02 22:04:58 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_receivables"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 664ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/my_open_listings" for 127.0.0.1 at 2013-05-02 22:05:00 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_open_listings"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 680ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-02 22:05:10 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (45.4ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-02 22:05:10 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-02 22:05:11 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-02 22:05:11 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-02 22:05:11 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/authenticated_calls/my_payables" for 127.0.0.1 at 2013-05-02 22:05:19 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_payables"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 122ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/my_receivables" for 127.0.0.1 at 2013-05-02 22:05:30 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_receivables"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 57ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/my_open_listings" for 127.0.0.1 at 2013-05-02 22:05:35 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_open_listings"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 179ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/me" for 127.0.0.1 at 2013-05-02 22:05:37 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"me"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 102ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/my_open_listings" for 127.0.0.1 at 2013-05-02 22:05:39 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_open_listings"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 178ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/my_receivables" for 127.0.0.1 at 2013-05-02 22:05:41 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_receivables"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 55ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/authenticated_calls/my_payables" for 127.0.0.1 at 2013-05-02 22:05:43 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_payables"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 54ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2013-05-02 22:05:45 -0300
+  Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 200 OK in 195ms (Views: 1.1ms | ActiveRecord: 0.0ms)
