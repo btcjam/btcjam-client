@@ -53,9 +53,12 @@ BtcjamClient::Application.routes.draw do
   match 'invest_call/:api' => 'api#invest_call', :as => :invest_call
   match 'open_calls/:api' => 'api#open_calls', :as => :open_calls
 
-  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" } do
-    get 'sign_out', :to => 'users/sessions#destroy', :as => :destroy_user_session
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+
+  devise_scope :user do
+    delete "/logout" => "devise/sessions#destroy"
   end
+
   root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"

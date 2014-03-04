@@ -10400,3 +10400,1169 @@ Started GET "/authenticated_calls/me" for 127.0.0.1 at 2013-05-02 22:25:30 -0300
   Parameters: {"api"=>"me"}
   [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
 Completed 200 OK in 187ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-05 19:36:59 -0300
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 44ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 19:36:59 -0300
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 19:36:59 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 19:36:59 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 19:36:59 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2013-05-05 19:37:02 -0300
+
+
+Started GET "/users/auth/btcjam/callback?code=dafd65fe662617c91607e7b6a4dfb6b7d3e93959a7a91a1385d5d463615c655e" for 127.0.0.1 at 2013-05-05 19:37:02 -0300
+  Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"dafd65fe662617c91607e7b6a4dfb6b7d3e93959a7a91a1385d5d463615c655e"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 2 LIMIT 1[0m
+  [1m[35m (1.9ms)[0m  UPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":2,"info":{"alias":"(User #1211)1","country":"TW","positive_count_reputation":0,"negative_count_reputation":0,"positive_percentage_reputation":0,"can_borrow":true,"can_trade":true,"btcjam_score":11,"bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":false,"facebook_connected":true,"facebook_friend_count":226,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":true,"paypal_account_date":"2007-04-07","repaid_loans_count":0,"repaid_loans_amount":0.0,"late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":0.0,"made_late_payments_count":0,"name":null},"credentials":{"token":"45472cbba992212b6da85438e89033446bd5531c5af8971101aaf2d6b8918efd","expires_at":1367800622,"expires":true},"extra":{}}', "btcjam_access_token" = '45472cbba992212b6da85438e89033446bd5531c5af8971101aaf2d6b8918efd', "updated_at" = '2013-05-05 22:37:03.309685' WHERE "users"."id" = 7
+Redirected to http://localhost:3001/
+Completed 302 Found in 81ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-05 19:37:03 -0300
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+Rendered home/index.html.haml within layouts/application (14.6ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-05 19:37:03 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-05 19:37:03 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-05 19:37:03 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-05 19:37:03 -0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/authenticated_calls/my_receivables" for 127.0.0.1 at 2013-05-05 19:37:06 -0300
+  Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_receivables"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 153ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "email" varchar(255), "alias" varchar(255), "btcjam_uid" integer, "btcjam_access_token" varchar(255), "oauth_data" text) 
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130428182753')
+  [1m[36m (1.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 12:52:20 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (24.4ms)
+Compiled application.css  (0ms)  (pid 23670)
+Compiled jquery.js  (1ms)  (pid 23670)
+Compiled jquery_ujs.js  (0ms)  (pid 23670)
+Compiled application.js  (12ms)  (pid 23670)
+Completed 200 OK in 90ms (Views: 89.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-04 12:52:20 -0800
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-04 12:52:20 -0800
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-04 12:52:20 -0800
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-04 12:52:20 -0800
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2014-03-04 12:52:23 -0800
+Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 500 Internal Server Error in 60001ms
+
+Timeout::Error (Timeout::Error):
+  lib/ssl_access.rb:11:in `block in ssl_get'
+  lib/ssl_access.rb:10:in `ssl_get'
+  app/controllers/api_controller.rb:19:in `open_calls'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2014-03-04 12:53:23 -0800
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/listings"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 12:57:53 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-04 12:57:53 -0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-04 12:57:53 -0800
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-04 12:57:53 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-04 12:57:53 -0800
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2014-03-04 12:57:56 -0800
+Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 500 Internal Server Error in 60001ms
+
+Timeout::Error (Timeout::Error):
+  lib/ssl_access.rb:11:in `block in ssl_get'
+  lib/ssl_access.rb:10:in `ssl_get'
+  app/controllers/api_controller.rb:19:in `open_calls'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2014-03-04 12:58:56 -0800
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/listings"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 13:00:31 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-04 13:00:31 -0800
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-04 13:00:31 -0800
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-04 13:00:31 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-04 13:00:31 -0800
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 13:00:34 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-04 13:00:34 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-04 13:00:34 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-04 13:00:34 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-04 13:00:34 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2014-03-04 13:00:36 -0800
+Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 500 Internal Server Error in 60001ms
+
+Timeout::Error (Timeout::Error):
+  lib/ssl_access.rb:11:in `block in ssl_get'
+  lib/ssl_access.rb:10:in `ssl_get'
+  app/controllers/api_controller.rb:19:in `open_calls'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started GET "/api/v1/listings" for 127.0.0.1 at 2014-03-04 13:01:36 -0800
+
+ActionController::RoutingError (No route matches [GET] "/api/v1/listings"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 13:11:01 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (23.6ms)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-04 13:11:01 -0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-04 13:11:01 -0800
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-04 13:11:01 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-04 13:11:01 -0800
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 13:11:04 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-04 13:11:04 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-04 13:11:04 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-04 13:11:04 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-04 13:11:04 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2014-03-04 13:11:06 -0800
+Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 406 Not Acceptable in 5910ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 13:12:16 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-04 13:12:16 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-04 13:12:16 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-04 13:12:16 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-04 13:12:16 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2014-03-04 13:12:18 -0800
+Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 406 Not Acceptable in 5387ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2014-03-04 13:13:16 -0800
+Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 406 Not Acceptable in 5554ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/listings" for 127.0.0.1 at 2014-03-04 13:14:01 -0800
+
+ActionController::RoutingError (No route matches [GET] "/listings"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 13:22:11 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-04 13:22:11 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-04 13:22:11 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-04 13:22:11 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-04 13:22:11 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2014-03-04 13:22:13 -0800
+Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 406 Not Acceptable in 5832ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2014-03-04 13:23:31 -0800
+Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 406 Not Acceptable in 5880ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2014-03-04 13:25:28 -0800
+Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 406 Not Acceptable in 5980ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2014-03-04 13:29:58 -0800
+Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 500 Internal Server Error in 5847ms
+
+ArgumentError (too few arguments):
+  app/controllers/api_controller.rb:21:in `format'
+  app/controllers/api_controller.rb:21:in `open_calls'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2014-03-04 13:34:09 -0800
+
+SyntaxError (/Users/celso/work/ovo/btcjam-client/app/controllers/api_controller.rb:30: syntax error, unexpected keyword_end, expecting $end):
+  activesupport (3.2.13) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__3917087096997895579__call__3445388415084389192__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.9ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2014-03-04 13:34:25 -0800
+Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 406 Not Acceptable in 7510ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/open_calls/listings.json" for 127.0.0.1 at 2014-03-04 13:35:06 -0800
+Processing by ApiController#open_calls as JSON
+  Parameters: {"api"=>"listings"}
+Completed 200 OK in 6013ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2014-03-04 13:36:49 -0800
+Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 500 Internal Server Error in 6291ms
+
+ActionView::MissingTemplate (Missing template api/open_calls, application/open_calls with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee, :haml]}. Searched in:
+  * "/Users/celso/work/ovo/btcjam-client/app/views"
+  * "/Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/devise-3.2.3/app/views"
+):
+  app/controllers/api_controller.rb:22:in `open_calls'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2014-03-04 13:38:15 -0800
+Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 200 OK in 6228ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2014-03-04 13:38:43 -0800
+Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 200 OK in 6421ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 13:39:39 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-04 13:39:39 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-04 13:39:39 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-04 13:39:39 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-04 13:39:39 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2014-03-04 13:39:42 -0800
+Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 200 OK in 6678ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2014-03-04 13:39:55 -0800
+
+
+Started GET "/users/auth/btcjam/callback?code=e3044ce6fec2ec05ce125393ceac2d00ef06c2528ca54ad47a6ccc67c33fa691&state=eae25651486e312ca6f08685a65c33962a9cc997e3d686e0" for 127.0.0.1 at 2014-03-04 13:39:55 -0800
+Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"e3044ce6fec2ec05ce125393ceac2d00ef06c2528ca54ad47a6ccc67c33fa691", "state"=>"eae25651486e312ca6f08685a65c33962a9cc997e3d686e0"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 2245 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (4.7ms)[0m  [1mINSERT INTO "users" ("alias", "btcjam_access_token", "btcjam_uid", "created_at", "email", "oauth_data", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["alias", "btctrader"], ["btcjam_access_token", "b3700e61685a5a057f70b61dff0ef64ae55ed20859e3250307f53a36352f62d0"], ["btcjam_uid", 2245], ["created_at", Tue, 04 Mar 2014 21:39:55 UTC +00:00], ["email", nil], ["oauth_data", "{\"provider\":\"btcjam\",\"uid\":2245,\"info\":{\"alias\":\"btctrader\",\"country\":\"US\",\"positive_count_reputation\":47,\"negative_count_reputation\":0,\"positive_percentage_reputation\":100,\"can_borrow\":true,\"can_trade\":true,\"btcjam_score\":\"B\",\"bitcointalk_account_verified\":false,\"address_verified\":true,\"identity_verified\":true,\"phone_verified\":true,\"facebook_connected\":false,\"facebook_friend_count\":null,\"linkedin_connected\":false,\"ebay_connected\":false,\"ebay_account_date\":null,\"ebay_feedback_score\":null,\"paypal_verified_account_connected\":true,\"paypal_account_date\":\"2008-03-01\",\"repaid_loans_count\":6,\"repaid_loans_amount\":151.50669371,\"late_loans_count\":0,\"open_credit_lines_count\":0,\"open_credit_lines_amount\":0.0,\"made_late_payments_count\":1,\"name\":null},\"credentials\":{\"token\":\"b3700e61685a5a057f70b61dff0ef64ae55ed20859e3250307f53a36352f62d0\",\"expires_at\":1393976395,\"expires\":true},\"extra\":{}}"], ["updated_at", Tue, 04 Mar 2014 21:39:55 UTC +00:00]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 60ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 13:39:55 -0800
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered home/index.html.haml within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined local variable or method `destroy_user_session_path' for #<#<Class:0x007fe8eb489578>:0x007fe8eb47ec18>):
+    30:             = link_to "My Receivables", authenticated_calls_path(:my_receivables), :class => "btn", "data-explore" => []
+    31:             = link_to "My Payables", authenticated_calls_path(:my_payables), :class => "btn", "data-explore" => []
+    32:             = link_to "Invest", invest_call_path(:investments, {:listing_id => 1, :amount => 0.1}), :class => "btn", "data-explore" => []
+    33:             = link_to "Sign out", destroy_user_session_path, :class => "btn primary"
+    34:     .span10
+    35:       %h2 BTCJam JSON API
+    36:       .well
+  app/views/home/index.html.haml:33:in `_app_views_home_index_html_haml__3803265988145049007_70319229480880'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.2ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 13:42:09 -0800
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered home/index.html.haml within layouts/application (73.6ms)
+Completed 500 Internal Server Error in 81ms
+
+ActionView::Template::Error (undefined local variable or method `destroy_user_session_path' for #<#<Class:0x007fb56bfd50c0>:0x007fb56e6fe408>):
+    30:             = link_to "My Receivables", authenticated_calls_path(:my_receivables), :class => "btn", "data-explore" => []
+    31:             = link_to "My Payables", authenticated_calls_path(:my_payables), :class => "btn", "data-explore" => []
+    32:             = link_to "Invest", invest_call_path(:investments, {:listing_id => 1, :amount => 0.1}), :class => "btn", "data-explore" => []
+    33:             = link_to "Sign out", destroy_user_session_path, :class => "btn primary", :method => :delete
+    34:     .span10
+    35:       %h2 BTCJam JSON API
+    36:       .well
+  app/views/home/index.html.haml:33:in `_app_views_home_index_html_haml___2514247338776493478_70208606826280'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 13:43:52 -0800
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered home/index.html.haml within layouts/application (18.2ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined local variable or method `destroy_user_session_path' for #<#<Class:0x007fb56c5a5f90>:0x007fb56c5a2ef8>):
+    30:             = link_to "My Receivables", authenticated_calls_path(:my_receivables), :class => "btn", "data-explore" => []
+    31:             = link_to "My Payables", authenticated_calls_path(:my_payables), :class => "btn", "data-explore" => []
+    32:             = link_to "Invest", invest_call_path(:investments, {:listing_id => 1, :amount => 0.1}), :class => "btn", "data-explore" => []
+    33:             = link_to "Sign out", destroy_user_session_path, :class => "btn primary"
+    34:     .span10
+    35:       %h2 BTCJam JSON API
+    36:       .well
+  app/views/home/index.html.haml:33:in `_app_views_home_index_html_haml___2514247338776493478_70208601169580'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (20.7ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 13:43:54 -0800
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered home/index.html.haml within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined local variable or method `destroy_user_session_path' for #<#<Class:0x007fb56c5a5f90>:0x007fb570ecc6d8>):
+    30:             = link_to "My Receivables", authenticated_calls_path(:my_receivables), :class => "btn", "data-explore" => []
+    31:             = link_to "My Payables", authenticated_calls_path(:my_payables), :class => "btn", "data-explore" => []
+    32:             = link_to "Invest", invest_call_path(:investments, {:listing_id => 1, :amount => 0.1}), :class => "btn", "data-explore" => []
+    33:             = link_to "Sign out", destroy_user_session_path, :class => "btn primary"
+    34:     .span10
+    35:       %h2 BTCJam JSON API
+    36:       .well
+  app/views/home/index.html.haml:33:in `_app_views_home_index_html_haml___2514247338776493478_70208601169580'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 13:43:58 -0800
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered home/index.html.haml within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined local variable or method `destroy_user_session_path' for #<#<Class:0x007fb56c5a5f90>:0x007fb56e23d8b0>):
+    30:             = link_to "My Receivables", authenticated_calls_path(:my_receivables), :class => "btn", "data-explore" => []
+    31:             = link_to "My Payables", authenticated_calls_path(:my_payables), :class => "btn", "data-explore" => []
+    32:             = link_to "Invest", invest_call_path(:investments, {:listing_id => 1, :amount => 0.1}), :class => "btn", "data-explore" => []
+    33:             = link_to "Sign out", destroy_user_session_path, :class => "btn primary"
+    34:     .span10
+    35:       %h2 BTCJam JSON API
+    36:       .well
+  app/views/home/index.html.haml:33:in `_app_views_home_index_html_haml___2514247338776493478_70208601169580'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 13:45:25 -0800
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered home/index.html.haml within layouts/application (75.9ms)
+Completed 500 Internal Server Error in 82ms
+
+ActionView::Template::Error (undefined local variable or method `sign_out_path' for #<#<Class:0x007fbc8b0254a0>:0x007fbc8a6f43e0>):
+    30:             = link_to "My Receivables", authenticated_calls_path(:my_receivables), :class => "btn", "data-explore" => []
+    31:             = link_to "My Payables", authenticated_calls_path(:my_payables), :class => "btn", "data-explore" => []
+    32:             = link_to "Invest", invest_call_path(:investments, {:listing_id => 1, :amount => 0.1}), :class => "btn", "data-explore" => []
+    33:             = link_to "Sign out", sign_out_path, :class => "btn primary"
+    34:     .span10
+    35:       %h2 BTCJam JSON API
+    36:       .well
+  app/views/home/index.html.haml:33:in `_app_views_home_index_html_haml___4190027863658414919_70223882157620'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 13:45:41 -0800
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered home/index.html.haml within layouts/application (5.9ms)
+Completed 200 OK in 16ms (Views: 16.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-04 13:45:41 -0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-04 13:45:41 -0800
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-04 13:45:41 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-04 13:45:41 -0800
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/authenticated_calls/me" for 127.0.0.1 at 2014-03-04 13:45:47 -0800
+Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"me"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 333ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/authenticated_calls/my_open_listings" for 127.0.0.1 at 2014-03-04 13:45:52 -0800
+Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_open_listings"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 30ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/authenticated_calls/my_receivables" for 127.0.0.1 at 2014-03-04 13:45:57 -0800
+Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_receivables"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 370ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/authenticated_calls/my_payables" for 127.0.0.1 at 2014-03-04 13:46:07 -0800
+Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"my_payables"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 53ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/invest_call/investments?amount=0.1&listing_id=1" for 127.0.0.1 at 2014-03-04 13:46:10 -0800
+Processing by ApiController#invest_call as HTML
+  Parameters: {"amount"=>"0.1", "listing_id"=>"1", "api"=>"investments"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 40ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 13:49:28 -0800
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered home/index.html.haml within layouts/application (16.3ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined local variable or method `logout_path' for #<#<Class:0x007fbc8b769f18>:0x007fbc8b25dd80>):
+    30:             = link_to "My Receivables", authenticated_calls_path(:my_receivables), :class => "btn", "data-explore" => []
+    31:             = link_to "My Payables", authenticated_calls_path(:my_payables), :class => "btn", "data-explore" => []
+    32:             = link_to "Invest", invest_call_path(:investments, {:listing_id => 1, :amount => 0.1}), :class => "btn", "data-explore" => []
+    33:             = link_to "Sign out", logout_path, :class => "btn primary"
+    34: 
+    35:     .span10
+    36:       %h2 BTCJam JSON API
+  app/views/home/index.html.haml:33:in `_app_views_home_index_html_haml___4190027863658414919_70223914477860'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 13:50:03 -0800
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered home/index.html.haml within layouts/application (18.4ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (undefined local variable or method `logout_path' for #<#<Class:0x007fbc8fd92850>:0x007fbc8fd4eda8>):
+    30:             = link_to "My Receivables", authenticated_calls_path(:my_receivables), :class => "btn", "data-explore" => []
+    31:             = link_to "My Payables", authenticated_calls_path(:my_payables), :class => "btn", "data-explore" => []
+    32:             = link_to "Invest", invest_call_path(:investments, {:listing_id => 1, :amount => 0.1}), :class => "btn", "data-explore" => []
+    33:             = link_to "Sign out", logout_path, :class => "btn primary", :method => :delete
+    34: 
+    35:     .span10
+    36:       %h2 BTCJam JSON API
+  app/views/home/index.html.haml:33:in `_app_views_home_index_html_haml___4190027863658414919_70223922873100'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 13:50:04 -0800
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered home/index.html.haml within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined local variable or method `logout_path' for #<#<Class:0x007fbc8fd92850>:0x007fbc8b025d10>):
+    30:             = link_to "My Receivables", authenticated_calls_path(:my_receivables), :class => "btn", "data-explore" => []
+    31:             = link_to "My Payables", authenticated_calls_path(:my_payables), :class => "btn", "data-explore" => []
+    32:             = link_to "Invest", invest_call_path(:investments, {:listing_id => 1, :amount => 0.1}), :class => "btn", "data-explore" => []
+    33:             = link_to "Sign out", logout_path, :class => "btn primary", :method => :delete
+    34: 
+    35:     .span10
+    36:       %h2 BTCJam JSON API
+  app/views/home/index.html.haml:33:in `_app_views_home_index_html_haml___4190027863658414919_70223922873100'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.4ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 14:46:04 -0800
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered home/index.html.haml within layouts/application (72.7ms)
+Completed 500 Internal Server Error in 80ms
+
+ActionView::Template::Error (undefined local variable or method `destroy_user_session' for #<#<Class:0x007faf174804e0>:0x007faf17303220>):
+    30:             = link_to "My Receivables", authenticated_calls_path(:my_receivables), :class => "btn", "data-explore" => []
+    31:             = link_to "My Payables", authenticated_calls_path(:my_payables), :class => "btn", "data-explore" => []
+    32:             = link_to "Invest", invest_call_path(:investments, {:listing_id => 1, :amount => 0.1}), :class => "btn", "data-explore" => []
+    33:             = link_to "Sign out", destroy_user_session, :class => "btn primary", :method => :delete
+    34: 
+    35:     .span10
+    36:       %h2 BTCJam JSON API
+  app/views/home/index.html.haml:33:in `_app_views_home_index_html_haml___1414710557392321070_70194991743820'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 14:46:14 -0800
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered home/index.html.haml within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined local variable or method `destroy_user_session_path' for #<#<Class:0x007faf174804e0>:0x007faf1722b5a0>):
+    30:             = link_to "My Receivables", authenticated_calls_path(:my_receivables), :class => "btn", "data-explore" => []
+    31:             = link_to "My Payables", authenticated_calls_path(:my_payables), :class => "btn", "data-explore" => []
+    32:             = link_to "Invest", invest_call_path(:investments, {:listing_id => 1, :amount => 0.1}), :class => "btn", "data-explore" => []
+    33:             = link_to "Sign out", destroy_user_session_path, :class => "btn primary", :method => :delete
+    34: 
+    35:     .span10
+    36:       %h2 BTCJam JSON API
+  app/views/home/index.html.haml:33:in `_app_views_home_index_html_haml___1414710557392321070_70194992073820'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 14:47:39 -0800
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered home/index.html.haml within layouts/application (33.6ms)
+Completed 200 OK in 54ms (Views: 53.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-04 14:47:39 -0800
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-04 14:47:40 -0800
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-04 14:47:40 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-04 14:47:40 -0800
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-03-04 14:47:43 -0800
+
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/celso/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 14:48:06 -0800
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered home/index.html.haml within layouts/application (6.7ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-04 14:48:06 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-04 14:48:06 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-04 14:48:06 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-04 14:48:06 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2014-03-04 14:48:08 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"v4Z68VQidviHpXJL0cC2zKwK2I2g75Ih+SZiQBNafYQ="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 14:48:08 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-04 14:48:08 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-04 14:48:08 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-04 14:48:08 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-04 14:48:08 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/open_calls/listings" for 127.0.0.1 at 2014-03-04 14:48:16 -0800
+Processing by ApiController#open_calls as HTML
+  Parameters: {"api"=>"listings"}
+Completed 200 OK in 6761ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/btcjam" for 127.0.0.1 at 2014-03-04 14:48:54 -0800
+
+
+Started GET "/users/auth/btcjam/callback?code=5bb9c1e9643e1c34bb704d3a86f6de09a1b1e156a4f2bdf3de70d65a3d87a662&state=ae5734484173c66dad2e173440abb0715c18de6e4701e6fb" for 127.0.0.1 at 2014-03-04 14:48:54 -0800
+Processing by Users::OmniauthCallbacksController#btcjam as HTML
+  Parameters: {"code"=>"5bb9c1e9643e1c34bb704d3a86f6de09a1b1e156a4f2bdf3de70d65a3d87a662", "state"=>"ae5734484173c66dad2e173440abb0715c18de6e4701e6fb"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."btcjam_uid" = 2245 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  UPDATE "users" SET "oauth_data" = '{"provider":"btcjam","uid":2245,"info":{"alias":"btctrader","country":"US","positive_count_reputation":47,"negative_count_reputation":0,"positive_percentage_reputation":100,"can_borrow":true,"can_trade":true,"btcjam_score":"B","bitcointalk_account_verified":false,"address_verified":true,"identity_verified":true,"phone_verified":true,"facebook_connected":false,"facebook_friend_count":null,"linkedin_connected":false,"ebay_connected":false,"ebay_account_date":null,"ebay_feedback_score":null,"paypal_verified_account_connected":true,"paypal_account_date":"2008-03-01","repaid_loans_count":6,"repaid_loans_amount":151.50669371,"late_loans_count":0,"open_credit_lines_count":0,"open_credit_lines_amount":0.0,"made_late_payments_count":1,"name":null},"credentials":{"token":"d43e405558eb9d1954abb86958349ce6c922d6c917b231e11191586058372c8d","expires_at":1393980534,"expires":true},"extra":{}}', "btcjam_access_token" = 'd43e405558eb9d1954abb86958349ce6c922d6c917b231e11191586058372c8d', "updated_at" = '2014-03-04 22:48:54.744906' WHERE "users"."id" = 1
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-04 14:48:54 -0800
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered home/index.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-04 14:48:54 -0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-04 14:48:54 -0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-04 14:48:54 -0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-04 14:48:54 -0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/authenticated_calls/me" for 127.0.0.1 at 2014-03-04 14:48:58 -0800
+Processing by ApiController#authenticated_calls as HTML
+  Parameters: {"api"=>"me"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 174ms (Views: 0.5ms | ActiveRecord: 0.2ms)
