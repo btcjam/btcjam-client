@@ -52,7 +52,10 @@ BtcjamClient::Application.routes.draw do
   match 'authenticated_calls/:api' => 'api#authenticated_calls', :as => :authenticated_calls
   match 'invest_call/:api' => 'api#invest_call', :as => :invest_call
   match 'open_calls/:api' => 'api#open_calls', :as => :open_calls
-
+  match 'new_user_calls/:api' => 'api#new_user_calls', :as => :new_user_calls
+   match 'new_id_calls/:api' => 'api#new_id_calls', :as => :new_id_calls
+   match 'new_addr_calls/:api' => 'api#new_addr_calls', :as => :new_addr_calls
+   match 'new_credit_calls/:api' => 'api#new_credit_calls', :as => :new_credit_calls 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   devise_scope :user do
