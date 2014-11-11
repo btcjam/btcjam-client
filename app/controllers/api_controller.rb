@@ -37,7 +37,7 @@ class ApiController < ApplicationController
     post_hash = {  'identity_check[img]' => Faraday::UploadIO.new(params[:picture], 'image/jpeg'),
        'identity_check[name]'=>params[:name],'identity_check[dob]'=>params[:dob],'identity_check[gender]'=>params[:gender],'identity_check[nationalid]'=>params[:nationalid],'identity_check[nationalid_type_id]' => params[:nationalid_type_id]}
     @jret = client_token_multipart.request(:post, "#{BTCJAM_APP_URL}/api/v1/#{params[:api]}", { body: post_hash } ).parsed
-    
+   
     render :json => @jret
     
   end

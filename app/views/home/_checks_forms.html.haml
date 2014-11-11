@@ -1,0 +1,143 @@
+.row
+  .col-md-4
+    .panel.panel-default
+      .panel-heading
+        .panel-title.text-center
+          Identity check
+      =form_tag( new_id_calls_path(:identity_checks), multipart: true) do
+        .form-group.panel-body
+          .row
+            .col-md-4
+              =label_tag "Name"
+            .col-md-8
+              =text_field_tag :name, '',class: "form-control"
+          .row
+            .col-md-4
+              =label_tag "Gender"
+            .col-md-8
+              =text_field_tag :gender, '',class: "form-control"
+          .row
+            .col-md-4
+              =label_tag "Date of Birth(YYYY-MM-DD)"
+            .col-md-8
+              =text_field_tag :dob , '',class: "form-control"
+          .row
+            .col-md-4
+              =label_tag "National ID type"
+            .col-md-8
+              =select_tag :nationalid_type_id, options_for_select(@nationalid_types.collect{ |u| [ u["name"],u["id"]] }),class: "form-control"
+          .row
+            .col-md-4
+              =label_tag "National Identification Number"
+            .col-md-8
+              =text_field_tag :nationalid, '',class: "form-control"
+          .row
+            .col-md-4
+              =label_tag "Document Picture"
+            .col-md-8
+              =file_field_tag 'picture' 
+          %br/
+          .text-center
+            =submit_tag "Submit id check" , class: "btn btn-default" 
+  .col-md-4
+    .panel.panel-default
+      .panel-heading
+        .panel-title.text-center
+          Address check
+      =form_tag( new_addr_calls_path(:addr_checks), multipart: true) do
+        .form-group.panel-body
+          .row
+            .col-md-4
+              =label_tag "Addres line 1"
+            .col-md-8
+              =text_field_tag :addr1, '',class: "form-control"
+          .row
+            .col-md-4
+              =label_tag "Addres line 2"
+            .col-md-8
+              =text_field_tag :addr2, '',class: "form-control"
+          .row
+            .col-md-4
+              =label_tag "zip code"
+            .col-md-8
+              =text_field_tag :zip , '',class: "form-control"
+          .row
+            .col-md-4
+              =label_tag "City"
+            .col-md-8
+              =text_field_tag :city, '',class: "form-control"
+          .row
+            .col-md-4
+              =label_tag "State"
+            .col-md-8
+              =text_field_tag :state, '',class: "form-control"
+          .row
+            .col-md-4
+              =label_tag "Country"
+            .col-md-8
+              =text_field_tag :country, '',class: "form-control"
+          .row
+            .col-md-4
+              =label_tag "Proof of address Picture"
+            .col-md-8
+              =file_field_tag 'picture' 
+          %br/
+          .text-center
+            =submit_tag "Submit Address check" , class: "btn btn-default"
+  .col-md-4
+    .panel.panel-default
+      .panel-heading
+        .panel-title.text-center
+          Income check
+      =form_tag( new_credit_calls_path(:credit_checks), multipart: true) do
+        .form-group.panel-body
+          .row
+            .col-md-4
+              =label_tag "SSN"
+            .col-md-8
+              =text_field_tag :ssn, '',class: "form-control"
+          .row
+            .col-md-4
+              =label_tag "Home ownership"
+            .col-md-8
+              =check_box_tag :home_ownership, '',class: "form-control"
+          .row
+            .col-md-4
+              =label_tag "Car Ownership"
+            .col-md-8
+              =check_box_tag :car_ownership , '',class: "form-control"
+          .row
+            .col-md-4
+              =label_tag "Annual Income"
+            .col-md-8
+              =text_field_tag :annual_income, '',class: "form-control"
+          .row
+            .col-md-4
+              =label_tag "Employment Status"
+            .col-md-8
+              =select_tag :employment_status_id, options_for_select(@statuses.collect{ |u| [ u["name"],u["id"]] }),class: "form-control"
+          .row
+            .col-md-4
+              =label_tag "Credit Score"
+            .col-md-8
+              =text_field_tag :credit_score, '',class: "form-control"
+          .row
+            .col-md-4
+              =label_tag "Proof of Income 1*"
+            .col-md-8
+              =file_field_tag 'picture1' 
+          .row
+            .col-md-4
+              =label_tag "Proof of Income 2"
+            .col-md-8
+              =file_field_tag 'picture2' 
+          .row
+            .col-md-4
+              =label_tag "Proof of Income 3"
+            .col-md-8
+              =file_field_tag 'picture3' 
+          %br/
+          .text-center
+            =submit_tag "Submit Credit check" , class: "btn btn-default"      
+ 
+       
