@@ -33,9 +33,19 @@
               =text_field_tag :nationalid, '',class: "form-control"
           .row
             .col-md-4
-              =label_tag "Document Picture"
+              =label_tag "Document Picture - front"
             .col-md-8
               =file_field_tag 'picture' 
+          .row
+            .col-md-4
+              =label_tag "Document Picture - back"
+            .col-md-8
+              =file_field_tag 'picture_back' 
+          .row
+            .col-md-4
+              =label_tag "Document Picture - with face"
+            .col-md-8
+              =file_field_tag 'picture_face' 
           %br/
           .text-center
             =submit_tag "Submit id check" , class: "btn btn-default" 
