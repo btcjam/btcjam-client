@@ -43,6 +43,15 @@ group :development do
   gem 'sqlite3'
 end
 
+group :development, :test, :staging do
+  gem 'jazz_hands', github: 'nixme/jazz_hands', branch: 'bring-your-own-debugger'
+  gem 'byebug', '~> 2.7'
+  gem 'pry-byebug', '~> 1.3'
+  gem 'rack-mini-profiler', require: false
+  gem 'image_optim', '~> 0.14', require: false
+  gem 'better_errors', '~> 1.1'
+end
+
 group :production do
   gem 'pg'
   gem 'thin'

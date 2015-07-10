@@ -1,0 +1,59 @@
+
+.col-md-4
+  .panel.panel-default
+    .panel-heading
+      .panel-title.text-center
+        Create Listing
+        
+    =form_tag( new_listing_calls_path(:listings)) do
+      .form-group.panel-body
+        .row
+          .col-md-4
+            =label_tag "loan_purpose_id"
+          .col-md-8
+            =text_field_tag :loan_purpose_id, '',class: "form-control"
+        .row
+          .col-md-4
+            =label_tag "amount"
+          .col-md-8
+            =text_field_tag :amount, '',class: "form-control"
+        .row
+          .col-md-4
+            =label_tag "currency_id"
+          .col-md-8
+            =text_field_tag :currency_id, '',class: "form-control"
+        .row
+          .col-md-4
+            =label_tag "term_days"
+          .col-md-8
+            =text_field_tag :term_days , '',class: "form-control"
+        .row
+          .col-md-4
+            =label_tag "payment_type_id"
+          .col-md-8
+            =text_field_tag :payment_type_id 
+        .row
+          .col-md-4
+            =label_tag "locale_id"
+          .col-md-8
+            =text_field_tag :locale_id, '',class: "form-control"
+        .row
+          .col-md-4
+            =label_tag "title"
+          .col-md-8
+            =text_field_tag :title, '',class: "form-control"
+        .row
+          .col-md-4
+            =label_tag "description"
+          .col-md-8
+            =text_field_tag :description, '',class: "form-control"
+        .row
+          .col-md-4
+            =label_tag "TFA Code"
+          .col-md-8
+            =text_field_tag :code, '',class: "form-control"
+        %br/
+        .text-center
+          =submit_tag "Submit Listing" , class: "btn btn-default" 
+
+     

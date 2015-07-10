@@ -17,7 +17,7 @@
                     .panel-title.text-center
                       Sign in to explore the OAuth2 API  
                   .panel-body          
-                    %p= link_to "Sign in with OAuth 2 provider", user_omniauth_authorize_path(:btcjam),  :class => "btn primary"
+                    %p= link_to "Sign in with OAuth 2 provider", omniauth_authorize_path(:user, :btcjam, :manolo=>'pimpster'),  :class => "btn primary"
               .col-md-4.col-md-offset-2
                 .panel.panel-default
                   .panel-heading 
@@ -52,7 +52,7 @@
               = link_to "My Open Listings", authenticated_calls_path(:my_open_listings), :class => "btn", "data-explore" => []
               = link_to "My Receivables", authenticated_calls_path(:my_receivables), :class => "btn", "data-explore" => []
               = link_to "My Payables", authenticated_calls_path(:my_payables), :class => "btn", "data-explore" => []
-              = link_to "Invest", invest_call_path(:investments, {:listing_id => 1, :amount => 0.1}), :class => "btn", "data-explore" => []
+              = link_to "Invest", invest_call_path(:investments, {:listing_id => 34567, :amount => 1.1}), :class => "btn", "data-explore" => []
               = link_to "Sign out", "/logout", :class => "btn primary", :method => :delete 
             %br/
             %p
@@ -64,7 +64,10 @@
                 %h3.text-center
                   Submit your documents via API
             = render partial: 'checks_forms'
-
+            .row  
+              = render partial: 'listings_form'
+              = render partial: 'investment_form'
+              = render partial: 'lead_listing_form'
     .col-md-12
       %h2 BTCJam JSON API
       .well

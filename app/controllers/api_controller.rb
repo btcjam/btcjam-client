@@ -11,14 +11,15 @@ class ApiController < ApplicationController
 
   def invest_call
 
-    @json = btcjam_access_token.post("api/v1/#{params[:api]}").parsed
+    @json = btcjam_access_token.post("api/v1/#{params[:api]}" ,{body: {
+       'listing_id'=>params[:listing_id], 'amount'=>params[:amount]}}).parsed
     render :json => @json
   end
 
   def open_calls
  
     if params[:api]=='listings' 
-      @listings = SSLAccess::ssl_get("#{BTCJAM_APP_URL}/api/v1/#{params[:api]}", {:appid => BTCJAM_APP_ID, :secret => BTCJAM_APP_SECRET} )
+      @listings = SSLAccess::ssl_get("#{BTCJAM_APP_URL}/api/v1/#{params[:api]}", {:appid => BTCJAM_APP_ID, :secret => BTCJAM_APP_SECRET, :timeout => 100} )
     end
 
     render :json => @listings.to_json
@@ -32,6 +33,24 @@ class ApiController < ApplicationController
     
   end
 
+
+  def new_lead_listing_calls 
+      @listing = btcjam_access_token.post("#{BTCJAM_APP_URL}/api/v1/#{params[:api]}", {body: {
+       'lead_listing[loan_purpose_id]'=>params[:loan_purpose_id], 'lead_listing[currency_id]'=>params[:currency_id],'lead_listing[amount]'=>params[:amount],'lead_listing[term_days]'=>params[:term_days],
+       'lead_listing[payment_type_id]'=>params[:payment_type_id],'lead_listing[locale_id]'=>params[:locale_id],'lead_listing[title]'=>params[:title],
+        'lead_listing[description]'=>params[:description],'lead_listing[fiat_amount]'=>params[:fiat_amount]}}).parsed
+     render :json => @listing
+    
+  end
+
+  def new_listing_calls 
+      @listing = btcjam_access_token.post("#{BTCJAM_APP_URL}/api/v1/#{params[:api]}", {body: {
+       'listing[loan_purpose_id]'=>params[:loan_purpose_id], 'listing[currency_id]'=>params[:currency_id],'listing[amount]'=>params[:amount],'listing[term_days]'=>params[:term_days],
+       'listing[payment_type_id]'=>params[:payment_type_id],'listing[locale_id]'=>params[:locale_id],'listing[title]'=>params[:title],
+        'listing[description]'=>params[:description],'listing[code]'=>params[:code]}}).parsed
+     render :json => @listing
+    
+  end
 
   def new_id_calls
     post_hash = {  'identity_check[img_front]' => Faraday::UploadIO.new(params[:picture], 'image/jpeg'),

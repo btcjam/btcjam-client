@@ -199,7 +199,7 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
-  config.omniauth :btcjam,  BTCJAM_APP_ID, BTCJAM_APP_SECRET, :client_options =>  {:site => BTCJAM_APP_URL}
+  config.omniauth :btcjam,  BTCJAM_APP_ID, BTCJAM_APP_SECRET, :client_options =>  {:site => BTCJAM_APP_URL, :pira=>'piro'},authorize_params: { registration: 'new' }
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

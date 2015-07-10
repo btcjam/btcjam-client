@@ -1,0 +1,23 @@
+
+.col-md-4
+  .panel.panel-default
+    .panel-heading
+      .panel-title.text-center
+        Invest
+    =form_tag( invest_call_path(:investments)) do
+      .form-group.panel-body
+        .row
+          .col-md-4
+            =label_tag "listing_id"
+          .col-md-8
+            =text_field_tag :listing_id, '',class: "form-control"
+        .row
+          .col-md-4
+            =label_tag "amount"
+          .col-md-8
+            =text_field_tag :amount, '',class: "form-control"
+        %br/
+        .text-center
+          =submit_tag "Submit Investment" , class: "btn btn-default" 
+
+     
