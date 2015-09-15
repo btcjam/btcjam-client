@@ -51,6 +51,7 @@ BtcjamClient::Application.routes.draw do
   #
   match 'authenticated_calls/:api' => 'api#authenticated_calls', :as => :authenticated_calls
   match 'invest_call/:api' => 'api#invest_call', :as => :invest_call
+  match 'reference_calls/:api' => 'api#reference_calls', :as => :reference_calls
   match 'open_calls/:api' => 'api#open_calls', :as => :open_calls
   match 'new_user_calls/:api' => 'api#new_user_calls', :as => :new_user_calls
   match 'new_id_calls/:api' => 'api#new_id_calls', :as => :new_id_calls
@@ -64,6 +65,7 @@ BtcjamClient::Application.routes.draw do
     delete "/logout" => "devise/sessions#destroy"
   end
 
+  resources :references
   root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"

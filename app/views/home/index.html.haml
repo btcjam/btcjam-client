@@ -52,6 +52,7 @@
               = link_to "My Open Listings", authenticated_calls_path(:my_open_listings), :class => "btn", "data-explore" => []
               = link_to "My Receivables", authenticated_calls_path(:my_receivables), :class => "btn", "data-explore" => []
               = link_to "My Payables", authenticated_calls_path(:my_payables), :class => "btn", "data-explore" => []
+              = link_to "My References", authenticated_calls_path(:references), :class => "btn", "data-explore" => []
               = link_to "Invest", invest_call_path(:investments, {:listing_id => 34567, :amount => 1.1}), :class => "btn", "data-explore" => []
               = link_to "Sign out", "/logout", :class => "btn primary", :method => :delete 
             %br/

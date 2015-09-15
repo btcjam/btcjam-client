@@ -42,6 +42,12 @@ class ApiController < ApplicationController
      render :json => @listing
     
   end
+  
+   def reference_calls 
+      @response = btcjam_access_token.put("#{BTCJAM_APP_URL}/api/v1/references/#{params[:reference_id]}/#{params[:api]}").parsed
+     render :json => @response
+    
+  end
 
   def new_listing_calls 
       @listing = btcjam_access_token.post("#{BTCJAM_APP_URL}/api/v1/#{params[:api]}", {body: {
