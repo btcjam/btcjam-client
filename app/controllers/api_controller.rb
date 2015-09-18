@@ -56,19 +56,16 @@ class ApiController < ApplicationController
         'listing[description]'=>params[:description],'listing[code]'=>params[:code]}}).parsed
      render :json => @listing
     
-  end
-
-<<<<<<< HEAD
-=======
-  def new_user_calls 
+  end 
+ 
+   def new_user_calls 
       @user = SSLAccess::ssl_post("#{BTCJAM_APP_URL}/api/v1/#{params[:api]}", :appid => BTCJAM_APP_ID, :secret => BTCJAM_APP_SECRET, 'user[email]'=>params[:username], 'user[password]'=>params[:password])
  
      render :json => @user.to_json
     
   end
 
-
->>>>>>> bb3a7489e731b579d4cb64975f7be223e0dcc659
+ 
   def new_id_calls
     post_hash = {  'identity_check[img_front]' => Faraday::UploadIO.new(params[:picture], 'image/jpeg'),
       'identity_check[img_back]' => Faraday::UploadIO.new(params[:picture_back], 'image/jpeg'),
