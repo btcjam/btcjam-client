@@ -1,0 +1,52 @@
+
+<div data-ng-app="MultiPaymentApp">
+	<div data-ng-controller="MultiPaymentsController">
+		<table id="mpt" border="1">
+			<tr>
+				<th>Id</th>
+				<th>Amount</th>
+				<th>Status</th>
+				<th>Is Paid</th>
+				<th>Multi Payment Number</th>
+				<th>Created At</th>
+				<th>Payment Date</th>
+				<th>Paid At</th>
+				<th></th>
+			</tr>
+			<tr data-ng-repeat="mp in multi_payments">
+				<td>{{ mp.id }}</td>
+				<td>{{ mp.amount }}</td>
+				<td>{{ mp.multi_payment_status_id }}</td>
+				<td>{{ mp.is_paid }}</td>
+				<td>{{ mp.multi_payment_number }}</td>
+				<td>{{ mp.created_at * 1000 | date:'yyyy-MM-dd'}}</td>
+				<td>{{ mp.dtpayment * 1000 | date:'yyyy-MM-dd' }}</td>
+				<td>{{ mp.dtpaid * 1000 | date:'yyyy-MM-dd' }}</td>
+				<!--
+				amount_paid: 1.030199,
+				auto_pay_attempts: 0,
+				conversion_to_btc_used: null,
+				currency_id: 1,
+				id: 5,
+				interest: 0.030199,
+				is_paid: true,
+				late_fee: 0,
+				listing_id: null,
+				multi_payment_number: 1,
+				multi_payment_status_id: 1,
+				principal: 1,
+				total_multi_payments: 5,
+				created_at: 1347997501,
+				dtpayment: 1348196400,
+				dtpaid: 1347937200,
+				amount: 1.030199,
+				amount_in_bitcoin: 1.030199,
+				late_fee_in_bitcoin: 0
+				-->
+				<td> 
+					<input type='button' value="Pay" data-ng-click = 'pay(mp.id)' data-ng-disabled='mp.multi_payment_status_id != 1 || mp.is_paid' /> 
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>

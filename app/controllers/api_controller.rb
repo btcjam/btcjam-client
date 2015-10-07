@@ -46,7 +46,11 @@ class ApiController < ApplicationController
    def reference_calls 
       @response = btcjam_access_token.put("#{BTCJAM_APP_URL}/api/v1/references/#{params[:reference_id]}/#{params[:api]}").parsed
      render :json => @response
-    
+  end
+  
+  def multi_payment_calls 
+      @response = btcjam_access_token.put("#{BTCJAM_APP_URL}/api/v1/multi_payments/#{params[:multi_payment_id]}/pay").parsed
+     render :json => @response
   end
 
   def new_listing_calls 
@@ -106,5 +110,41 @@ class ApiController < ApplicationController
     
   end  
   
+  
+  def new_phone_calls
+    post_hash = {'phone_check[phone]' => params[:phone]}
+   
+    @jret = client_token_multipart.request(:post, "#{BTCJAM_APP_URL}/api/v1/#{params[:api]}", { body: URI.encode_www_form(post_hash) } ).parsed
+   render :json => @jret
+  end 
+  
+  def phone_confirmation_calls
+    post_hash = {'pin_entered' => params[:pin_entered]}
+   
+    @jret = client_token_multipart.request(:put, "#{BTCJAM_APP_URL}/api/v1/#{params[:api]}/#{params[:id]}", { body: URI.encode_www_form(post_hash) } ).parsed
+   render :json => @jret
+  end
+  
+  def phone_resend_sms_calls
+    @jret = client_token_multipart.request(:get, "#{BTCJAM_APP_URL}/api/v1/#{params[:api]}/#{params[:id]}/resend").parsed
+   render :json => @jret
+  end
+  
+  def user_change_calls
+    post_hash = {'new_value' => params[:new_value]}
+    @jret = client_token_multipart.request(:post, "#{BTCJAM_APP_URL}/api/v1/#{params[:api]}", { body: URI.encode_www_form(post_hash) } ).parsed
+   render :json => @jret
+  end
+
+  def withdraw_calls
+    post_hash = {'amount' => params[:amount], 'code' => params[:code]}
+    jret = client_token_multipart.request(:post, "#{BTCJAM_APP_URL}/api/v1/#{params[:api]}", { body: URI.encode_www_form(post_hash) } ).parsed
+    render :json => jret
+  end
+
+  def credit_report_calls
+    jret = client_token_multipart.request(:get, "#{BTCJAM_APP_URL}/api/v1/#{params[:api]}").parsed
+    render :json => jret
+  end
  
 end

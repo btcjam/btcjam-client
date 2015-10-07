@@ -1,0 +1,15 @@
+.col-md-4
+  .panel.panel-default
+    .panel-heading
+      .panel-title.text-center
+        Bitcoin Address
+      =form_tag( user_change_calls_path(:user_changes), multipart: true) do
+        .form-group.panel-body
+          .row
+            .col-md-4
+              =label_tag "New Bitcoin Address"
+            .col-md-8
+              =text_field_tag :new_value, '',class: "form-control"
+          %br/
+          .text-center
+            =submit_tag "Submit Change Request" , class: "btn btn-default"

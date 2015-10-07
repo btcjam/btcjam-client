@@ -1,0 +1,23 @@
+%p
+  = link_to "User Information", authenticated_calls_path(:me), :class => "btn", "data-explore" => []
+  = link_to "My Open Listings", authenticated_calls_path(:my_open_listings), :class => "btn", "data-explore" => []
+  = link_to "My Receivables", authenticated_calls_path(:my_receivables), :class => "btn", "data-explore" => []
+  = link_to "My Payables", authenticated_calls_path(:my_payables), :class => "btn", "data-explore" => []
+  = link_to "References", authenticated_calls_path(:references), :class => "btn", "data-explore" => []
+  = link_to "Multi Payments", authenticated_calls_path(:multi_payments), :class => "btn", "data-explore" => []
+  = link_to "Invest", invest_call_path(:investments, {:listing_id => 34567, :amount => 1.1}), :class => "btn", "data-explore" => []
+  = link_to "Sign out", "/logout", :class => "btn primary", :method => :delete 
+%br/
+%p
+  = link_to "My ID Checks", authenticated_calls_path(:identity_checks), :class => "btn", "data-explore" => []
+  = link_to "My Address Checks", authenticated_calls_path(:addr_checks), :class => "btn", "data-explore" => []
+  = link_to "My Credit Checks", authenticated_calls_path(:credit_checks), :class => "btn", "data-explore" => []
+.row 
+  .col-md-12
+    %h3.text-center
+      Submit your documents via API
+= render partial: 'checks_forms'
+.row  
+  = render partial: 'listings_form'
+  = render partial: 'investment_form'
+  = render partial: 'lead_listing_form'

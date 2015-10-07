@@ -1,0 +1,20 @@
+.col-md-4
+  .panel.panel-default
+    .panel-heading
+      .panel-title.text-center
+        Withdraw
+      =form_tag( withdraw_calls_path(:withdraws), multipart: true) do
+        .form-group.panel-body
+          .row
+            .col-md-4
+              =label_tag "Amount"
+            .col-md-8
+              =text_field_tag :amount, '',class: "form-control"
+          .row
+            .col-md-4
+              =label_tag "Two Factor Code"
+            .col-md-8
+              =text_field_tag :code, '',class: "form-control"
+          %br/
+          .text-center
+            =submit_tag "Withdraw" , class: "btn btn-default"

@@ -25,7 +25,6 @@
             .col-md-4
               =label_tag "National ID type"
             .col-md-8
-              =select_tag :nationalid_type_id, options_for_select(@nationalid_types.collect{ |u| [ u["name"],u["id"]] }),class: "form-control"
           .row
             .col-md-4
               =label_tag "National Identification Number"
@@ -125,7 +124,6 @@
             .col-md-4
               =label_tag "Employment Status"
             .col-md-8
-              =select_tag :employment_status_id, options_for_select(@statuses.collect{ |u| [ u["name"],u["id"]] }),class: "form-control"
           .row
             .col-md-4
               =label_tag "Credit Score"
@@ -148,6 +146,58 @@
               =file_field_tag 'picture3' 
           %br/
           .text-center
-            =submit_tag "Submit Credit check" , class: "btn btn-default"      
+            =submit_tag "Submit Credit check" , class: "btn btn-default"
+.row
+  .col-md-4
+    .panel.panel-default
+      .panel-heading
+        .panel-title.text-center
+          Phone check
+        =form_tag( new_phone_calls_path(:phone_checks), multipart: true) do
+          .form-group.panel-body
+            .row
+              .col-md-4
+                =label_tag "Phone"
+              .col-md-8
+                =text_field_tag :phone, '',class: "form-control"
+            %br/
+            .text-center
+              =submit_tag "Submit Phone check" , class: "btn btn-default"
+  .col-md-4
+    .panel.panel-default
+      .panel-heading
+        .panel-title.text-center
+          Resend SMS
+        =form_tag( phone_resend_sms_calls_path(:phone_checks), multipart: true) do
+          .form-group.panel-body
+            .row
+              .col-md-4
+                =label_tag "Phone Check Id"
+              .col-md-8
+                =text_field_tag :id, '',class: "form-control"
+            %br/
+            .text-center
+              =submit_tag "Resend" , class: "btn btn-default"
+  .col-md-4
+    .panel.panel-default
+      .panel-heading
+        .panel-title.text-center
+          Phone check confirmation
+        =form_tag( phone_confirmation_calls_path(:phone_checks), multipart: true) do
+          .form-group.panel-body
+            .row
+              .col-md-4
+                =label_tag "Phone Check Id"
+              .col-md-8
+                =text_field_tag :id, '',class: "form-control"
+            %br/
+            .row
+              .col-md-4
+                =label_tag "PIN"
+              .col-md-8
+                =text_field_tag :pin_entered, '',class: "form-control"
+            %br/
+            .text-center
+              =submit_tag "Submit Phone check confirmation" , class: "btn btn-default"
  
        

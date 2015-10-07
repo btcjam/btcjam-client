@@ -45,6 +45,7 @@ GEM
     activesupport (3.2.13)
       i18n (= 0.6.1)
       multi_json (~> 1.0)
+    angularjs-rails (1.4.3)
     ansi (1.4.3)
     arel (3.0.3)
     atomic (1.1.15)
@@ -84,7 +85,7 @@ GEM
     diff-lcs (1.2.5)
     diffy (3.0.7)
     erubis (2.7.0)
-    eventmachine (1.0.3)
+    eventmachine (1.0.8)
     execjs (2.0.2)
     exifr (1.2.0)
     faraday (0.9.0)
@@ -234,6 +235,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  angularjs-rails
   better_errors (~> 1.1)
   byebug (~> 2.7)
   coffee-rails (~> 3.2.1)
@@ -253,3 +255,6 @@ DEPENDENCIES
   thin
   turn (~> 0.8.3)
   uglifier (>= 1.0.3)
+
+BUNDLED WITH
+   1.10.6
