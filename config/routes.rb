@@ -54,7 +54,7 @@ BtcjamClient::Application.routes.draw do
   match 'reference_calls/:api' => 'api#reference_calls', :as => :reference_calls
   match 'multi_payment_calls' => 'api#multi_payment_calls', :as => :multi_payment_calls
   match 'open_calls/:api' => 'api#open_calls', :as => :open_calls
-  match 'new_user_calls/:api' => 'api#new_user_calls', :as => :new_user_calls
+  match 'new_user_calls/:api' => 'api#new_user_calls', :as => :new_user_calls 
   match 'new_id_calls/:api' => 'api#new_id_calls', :as => :new_id_calls
   match 'new_addr_calls/:api' => 'api#new_addr_calls', :as => :new_addr_calls
   match 'new_credit_calls/:api' => 'api#new_credit_calls', :as => :new_credit_calls 
@@ -65,7 +65,7 @@ BtcjamClient::Application.routes.draw do
   match 'withdraw_calls/:api' => 'api#withdraw_calls', :as => :withdraw_calls
   match 'credit_report_calls/:api' => 'api#credit_report_calls', :as => :credit_report_calls
   match 'new_listing_calls/:api' => 'api#new_listing_calls', :as => :new_listing_calls 
-  match 'new_lead_listing_calls/:api' => 'api#new_lead_listing_calls', :as => :new_lead_listing_calls 
+  match 'new_lead_listing_calls/:api' => 'api#new_lead_listing_calls', :as => :new_lead_listing_calls  
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   devise_scope :user do
