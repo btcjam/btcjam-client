@@ -1,0 +1,23 @@
+.col-md-4
+  .panel.panel-default
+    .panel-heading
+      .panel-title.text-center
+        Activate Listing
+        
+    =form_tag( activate_listing_path(:listings), multipart: true) do
+      .form-group.panel-body
+        .row
+          .col-md-4
+            =label_tag "listing_id"
+          .col-md-8
+            =text_field_tag :listing_id, '',class: "form-control"
+        .row
+          .col-md-4
+            =label_tag "Signature Picture"
+          .col-md-8
+            =file_field_tag :signature
+        %br/
+        .text-center
+          =submit_tag "Activate" , class: "btn btn-default" 
+
+     

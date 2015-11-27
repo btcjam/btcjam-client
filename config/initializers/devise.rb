@@ -201,7 +201,7 @@ Devise.setup do |config|
   # up on your models and hooks.
   config.omniauth :btcjam,  BTCJAM_APP_ID, BTCJAM_APP_SECRET, :client_options =>  {:site => BTCJAM_APP_URL, :pira=>'piro'},authorize_params: 
   {
-    :scope => 'basic_profile make_loan extended_profile identity_information identity_information_proof address_information address_information_proof income_information income_information_proof invest withdraw trade submit_documents manage_references phone_information',
+    :scope => 'make_loan extended_profile identity_information identity_information_proof address_information address_information_proof income_information income_information_proof phone_information invest trade withdraw submit_documents manage_references manage_account_information',
     registration: 'new' }
 
   # ==> Warden configuration

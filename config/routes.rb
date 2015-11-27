@@ -65,6 +65,7 @@ BtcjamClient::Application.routes.draw do
   match 'withdraw_calls/:api' => 'api#withdraw_calls', :as => :withdraw_calls
   match 'credit_report_calls/:api' => 'api#credit_report_calls', :as => :credit_report_calls
   match 'new_listing_calls/:api' => 'api#new_listing_calls', :as => :new_listing_calls 
+  match 'activate_listing' => 'api#activate_listing', :as => :activate_listing 
   match 'new_lead_listing_calls/:api' => 'api#new_lead_listing_calls', :as => :new_lead_listing_calls  
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 

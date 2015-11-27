@@ -5,7 +5,7 @@
       .panel-title.text-center
         Create Listing
         
-    =form_tag( new_listing_calls_path(:listings)) do
+    =form_tag( new_listing_calls_path(:listings), multipart: true) do
       .form-group.panel-body
         .row
           .col-md-4
@@ -52,6 +52,11 @@
             =label_tag "TFA Code"
           .col-md-8
             =text_field_tag :code, '',class: "form-control"
+        .row
+          .col-md-4
+            =label_tag "Signature Picture"
+          .col-md-8
+            =file_field_tag :signature
         %br/
         .text-center
           =submit_tag "Submit Listing" , class: "btn btn-default" 

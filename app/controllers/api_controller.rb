@@ -53,14 +53,24 @@ class ApiController < ApplicationController
      render :json => @response
   end
 
-  def new_listing_calls 
-      @listing = btcjam_access_token.post("#{BTCJAM_APP_URL}/api/v1/#{params[:api]}", {body: {
+  def new_listing_calls
+    post_hash = {
+      'img_publishing_signature' => Faraday::UploadIO.new(params[:signature], 'image/jpeg'),
        'listing[loan_purpose_id]'=>params[:loan_purpose_id], 'listing[currency_id]'=>params[:currency_id],'listing[amount]'=>params[:amount],'listing[term_days]'=>params[:term_days],
        'listing[payment_type_id]'=>params[:payment_type_id],'listing[locale_id]'=>params[:locale_id],'listing[title]'=>params[:title],
-        'listing[description]'=>params[:description],'listing[code]'=>params[:code]}}).parsed
+        'listing[description]'=>params[:description],'listing[code]'=>params[:code]
+        } 
+
+      @listing = client_token_multipart.request(:post, "#{BTCJAM_APP_URL}/api/v1/#{params[:api]}", {body: post_hash}).parsed
      render :json => @listing
     
   end 
+
+  def activate_listing
+    post_hash = { 'img_activation_signature' => Faraday::UploadIO.new(params[:signature], 'image/jpeg') }
+    @listing = client_token_multipart.request(:put, "#{BTCJAM_APP_URL}/api/v1/listings/#{params[:listing_id]}/activate", {body: post_hash}).parsed
+    render :json => @listing
+  end
  
    def new_user_calls 
       @user = SSLAccess::ssl_post("#{BTCJAM_APP_URL}/api/v1/#{params[:api]}", :appid => BTCJAM_APP_ID, :secret => BTCJAM_APP_SECRET, 'user[email]'=>params[:username], 'user[password]'=>params[:password])
